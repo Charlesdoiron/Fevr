@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid rgba(25, 25, 25, 0.04);
+    .fa {
+        margin-right: 10%;
+    }
+    p {
+        font-size: 0.5em;
+        margin-bottom: 0;
+    }
+}
+
+.footer__socials {
+    width: 33%;
+}
+
+.footer__logo {
+    text-align: center;
+    width: 33%;
+    img {
+        width: 20%;
+    }
+}
+
+.footer__adress {
+    text-align: center;
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.french__adress,
+.us__adress {
+    max-width: 90px;
+}

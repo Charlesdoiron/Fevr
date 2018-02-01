@@ -1,0 +1,125 @@
+.controls-wrapper,
+.sidedock {
+    display: none !important;
+}
+
+.two-col {
+    display: flex;
+    justify-content: center;
+}
+
+.one-col .img-container,
+.two-col .img-container {
+    padding: 3px;
+}
+
+.one-col .img-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.entry-content p {
+    color: #585858;
+    font-size: 0.8em;
+    font-family: 'Avenir-Book';
+    font-weight: 100;
+    margin: 0;
+}
+
+.entry-header {
+    padding: 0 5em;
+    @media screen and (min-width: 59.6875em) {
+        padding: 0 5em;
+    }
+    @media screen and (min-width: 38.75em) {
+        padding: 0 5em;
+    }
+}
+
+
+
+body.single {
+    background: #000;
+}
+
+.single .hentry {
+    background-color: #000;
+}
+
+.single .post-thumbnail {
+    display: none;
+}
+
+.title__video__post {
+    text-rendering: optimizeLegibility;
+    font-family: 'Avenir-Book';
+    font-weight: 100;
+    font-size: 1.3em;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+    color: #969696;
+}
+
+.single .entry-content {
+    color: #d4d4d4;
+    padding: 0 15em 5em 5em;
+    text-align: justify;
+}
+
+
+
+/*.post__desc {
+    padding: 2em;
+}*/
+
+.post__container {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: #191919;
+}
+
+.page__close {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    img{
+        transition : all 2s;
+        opacity: 0.2;
+        cursor: pointer;
+    }
+    img:hover{
+        transition : all 2s;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+
+.post {
+    margin: 0;
+    .video360 {
+        height: 80vh;
+        padding: 0 5%;
+    }
+}
+
+.post__nav-prev,
+.post__nav-next {
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.post__nav-prev {}
+
+.post__nav-next {
+    transform: rotate(180deg);
+}
+
+.post-navigation .nav-next {
+    background-image: none !important;
+}

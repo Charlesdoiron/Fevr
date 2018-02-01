@@ -1,0 +1,629 @@
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url("../fonts/Avenir-Book.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+img.custom-logo {
+  width: 7%; }
+
+.site-branding {
+  padding: 1em; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid rgba(25, 25, 25, 0.04); }
+  .footer .fa {
+    margin-right: 10%; }
+  .footer p {
+    font-size: 0.5em;
+    margin-bottom: 0; }
+
+.footer__socials {
+  width: 33%; }
+
+.footer__logo {
+  text-align: center;
+  width: 33%; }
+  .footer__logo img {
+    width: 20%; }
+
+.footer__adress {
+  text-align: center;
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+  text-align: left; }
+
+.french__adress,
+.us__adress {
+  max-width: 90px; }
+
+/*GENERAL*/
+@media screen and (min-width: 59.6875em) {
+  .site {
+    margin: 0 auto;
+    max-width: 100%; } }
+
+body,
+p {
+  font-family: 'Avenir-Book'; }
+
+body {
+  background-color: #FFF; }
+
+@media screen and (min-width: 59.6875em) {
+  body:before {
+    display: none; } }
+
+@media screen and (min-width: 59.6875em) {
+  .site-content {
+    width: 100%;
+    margin-left: 0; } }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+a.post-thumbnail:hover,
+a.post-thumbnail:focus {
+  opacity: 1; }
+
+.home article {
+  margin: 0 !important;
+  padding: 0;
+  margin-top: -57px !important;
+  border: 0; }
+
+@media screen and (max-width: 768px) {
+  .home article {
+    border: 0 !important; } }
+
+.home img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+  width: 100%;
+  height: 100%; }
+
+.home .site-main {
+  padding: 0; }
+
+.home .entry-title {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .home .entry-title {
+    font-size: 20px;
+    top: 40%; } }
+
+.home .entry-title a {
+  color: #FFF;
+  text-rendering: optimizeLegibility;
+  font-family: 'Avenir-Book', 'sans-serif';
+  font-weight: 400;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1); }
+
+.mask-title {
+  background: #FFF;
+  width: 60%;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  /* top: 0; */
+  /* bottom: 0; */
+  margin: 0 auto;
+  transition: all 1s; }
+
+.mask-title-animation {
+  height: 2px;
+  width: 40px;
+  transition: all 1s; }
+
+.home .entry-footer,
+.home .entry-content {
+  display: none; }
+
+/*MASK*/
+.mask__project {
+  background-color: #000;
+  width: 100%;
+  height: 0px;
+  transform: translateX(100%);
+  position: absolute;
+  transition: all 1s;
+  z-index: 1;
+  /*-webkit-animation: maskProject;
+    -moz-animation:maskProject;
+    -o-animation:maskProject;*/ }
+
+/*@keyframes maskProject {
+  0%   { transform: translateX(100%); }
+  50% { transform: translateX(0);}
+  90% { transform: translateX(0);}
+  100% { transform: translateX(-100%);}
+}*/
+.controls-wrapper,
+.sidedock {
+  display: none !important; }
+
+.two-col {
+  display: flex;
+  justify-content: center; }
+
+.one-col .img-container,
+.two-col .img-container {
+  padding: 3px; }
+
+.one-col .img-container {
+  width: 50%;
+  margin: 0 auto; }
+
+.entry-content p {
+  color: #585858;
+  font-size: 0.8em;
+  font-family: 'Avenir-Book';
+  font-weight: 100;
+  margin: 0; }
+
+.entry-header {
+  padding: 0 5em; }
+  @media screen and (min-width: 59.6875em) {
+    .entry-header {
+      padding: 0 5em; } }
+  @media screen and (min-width: 38.75em) {
+    .entry-header {
+      padding: 0 5em; } }
+
+body.single {
+  background: #000; }
+
+.single .hentry {
+  background-color: #000; }
+
+.single .post-thumbnail {
+  display: none; }
+
+.title__video__post {
+  text-rendering: optimizeLegibility;
+  font-family: 'Avenir-Book';
+  font-weight: 100;
+  font-size: 1.3em;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  letter-spacing: 1px;
+  color: #969696; }
+
+.single .entry-content {
+  color: #d4d4d4;
+  padding: 0 15em 5em 5em;
+  text-align: justify; }
+
+/*.post__desc {
+    padding: 2em;
+}*/
+.post__container {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  background-color: #191919; }
+
+.page__close {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2em;
+  margin-bottom: 2em; }
+  .page__close img {
+    transition: all 2s;
+    opacity: 0.2;
+    cursor: pointer; }
+  .page__close img:hover {
+    transition: all 2s;
+    opacity: 0.8;
+    cursor: pointer; }
+
+.post {
+  margin: 0; }
+  .post .video360 {
+    height: 80vh;
+    padding: 0 5%; }
+
+.post__nav-prev,
+.post__nav-next {
+  width: 20%;
+  text-align: center;
+  margin: 0 auto; }
+
+.post__nav-next {
+  transform: rotate(180deg); }
+
+.post-navigation .nav-next {
+  background-image: none !important; }
+
+.page-template-template-about .main-navigation li a {
+  color: #000;
+  font-family: 'Avenir-Book', 'sans-serif';
+  text-transform: uppercase; }
+
+.page-template-template-about .main-navigation .current-menu-item > a,
+.page-template-template-about .main-navigation .current-menu-ancestor > a {
+  font-weight: inherit;
+  border-bottom: 3px solid #000; }
+
+.bck-doted {
+  background: linear-gradient(90deg, #FFF 21px, transparent 1%) center, linear-gradient(#FFF 21px, transparent 1%) center, #A0A0A0;
+  background-size: 22px 22px; }
+
+.about__title {
+  font-size: 40px;
+  color: #969696;
+  font-family: 'avenir';
+  font-weight: 100; }
+
+.about__p {
+  padding: 0 10%;
+  text-align: justify;
+  color: #585858;
+  font-size: 1.2em;
+  margin: 10% 0; }
+  @media screen and (max-width: 768px) {
+    .about__p {
+      padding-top: 15%; } }
+
+.about__offer {
+  padding-top: 20%;
+  background-color: #191919; }
+
+.about__offer__list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px; }
+  @media screen and (max-width: 768px) {
+    .about__offer__list-item {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.about__slider {
+  display: flex;
+  margin-bottom: -17%; }
+
+.slider {
+  width: 100%; }
+
+.about__slider-mask {
+  background-color: #000;
+  height: 424px;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  transition: all 0.5s; }
+
+.about__first-column {
+  width: 65%; }
+
+.about__second-column {
+  width: 35%;
+  text-align: center; }
+  .about__second-column img {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 5%; }
+
+.about__offer-title {
+  color: #969696;
+  font-size: 0.9em;
+  font-weight: 100;
+  font-family: "avenir"; }
+  @media screen and (max-width: 768px) {
+    .about__offer-title {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; } }
+
+.about__offer-p {
+  max-width: 18em;
+  margin-bottom: 4em;
+  color: #585858;
+  font-size: 0.8em;
+  font-weight: 100;
+  font-family: "avenir"; }
+  @media screen and (max-width: 768px) {
+    .about__offer-p {
+      justify-content: center;
+      max-width: 100%;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 1em;
+      margin-bottom: 2em; } }
+
+.about__row {
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .about__row {
+      flex-direction: column;
+      justify-content: center; } }
+
+.about__devices {
+  background-color: #141414;
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .about__devices {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; } }
+
+.about__devices-desc {
+  margin: 0 auto;
+  padding-top: 9%; }
+  @media screen and (max-width: 768px) {
+    .about__devices-desc {
+      padding-top: 2%;
+      padding-bottom: 2%; } }
+  .about__devices-desc .p {
+    color: #585858;
+    text-align: center;
+    font-size: 1.3em; }
+
+.devices__picto {
+  display: flex;
+  justify-content: space-around; }
+  .devices__picto img {
+    margin-right: 10%; }
+
+.about__devices-img {
+  width: 50%; }
+  @media screen and (max-width: 768px) {
+    .about__devices-img {
+      margin: 0 auto; } }
+
+.about__clients {
+  background-color: #FFF;
+  padding: 1% 0; }
+  .about__clients .about__title {
+    margin: 2% 0; }
+
+.logos__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; }
+
+.clients__logo {
+  width: 10%;
+  height: 100%; }
+
+.contact__main {
+  background-color: #000; }
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh; }
+
+#map__container {
+  width: 60%;
+  transform: translateX(30px);
+  transition: all 1s;
+  transition-timing-function: ease-in-out; }
+
+.form__container {
+  width: 70%;
+  padding: 20px; }
+
+#map {
+  height: 100vh;
+  width: 100%; }
+
+.mapChangeWith {
+  width: 100% !important;
+  transform: translateX(0px) !important;
+  transition-timing-function: ease-in-out;
+  transition: all 1s; }
+
+.adress {
+  width: 100%;
+  line-height: 21px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  border-right: 1px solid #333333;
+  padding-right: 10px;
+  color: #444444; }
+
+input,
+input:focus {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #444444;
+  max-width: 100%; }
+
+::placeholder {
+  font-family: 'Playfair Display', serif;
+  color: #444444; }
+
+textarea,
+textarea:focus {
+  min-width: 100%;
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid #444444;
+  max-width: 100%;
+  max-height: 150px;
+  min-height: 150px; }
+
+.two-col-form {
+  display: flex;
+  justify-content: space-between; }
+
+.wpcf7-form-control-wrap {
+  margin-right: 5px; }
+
+input[type="button"] {
+  color: #fff;
+  background-color: #8d88be;
+  border-color: #7d78b5;
+  padding: 6px; }
+
+span.wpcf7-not-valid-tip {
+  color: #585858;
+  font-size: 12px;
+  letter-spacing: 3px; }
+
+.wpcf7-validation-errors {
+  display: none !important; }
+
+button#tab_contact,
+button#tab_job,
+input.wpcf7-form-control.wpcf7-submit {
+  background: transparent;
+  border: 1px solid #333333;
+  transition: all 2s;
+  color: #333333;
+  font-weight: normal;
+  font-family: inherit;
+  min-width: 210px;
+  letter-spacing: 10px;
+  margin: 10px; }
+
+button#tab_contact:hover,
+button#tab_job:hover,
+input.wpcf7-form-control.wpcf7-submit:hover {
+  background: transparent;
+  border: 1px solid transparent;
+  background-color: #333333;
+  transition: all 2s; }
+
+button#tab_contact:active,
+button#tab_job:active {
+  background: #585858; }
+
+#sidebar {
+  width: 100%;
+  max-width: 100%;
+  z-index: 10; }
+
+#site-navigation {
+  width: 100%;
+  margin: 0;
+  text-align: center; }
+
+.main-navigation li {
+  display: inline-block;
+  margin-left: 2em;
+  margin-right: 1em;
+  border-top: 0; }
+
+.main-navigation li a {
+  color: #FFF;
+  font-family: 'Avenir-Book', 'sans-serif';
+  text-transform: uppercase; }
+
+.main-navigation li a.active {
+  color: #000; }
+
+.main-navigation .current-menu-item > a,
+.main-navigation .current-menu-ancestor > a {
+  font-weight: inherit;
+  border-bottom: 3px solid #FFF; }
+
+.main-navigation .current-menu-item > a.active,
+.main-navigation .current-menu-ancestor > a {
+  font-weight: inherit;
+  border-bottom: 3px solid #000; }
+
+.main-navigation ul,
+.menu-item {
+  border: 0; }
+
+.site-header {
+  margin: 0;
+  padding: 0 !important; }
+
+.menu-main-menu-container {
+  float: right; }
+
+.secondary-toggle {
+  border: 0; }
+
+/*@media screen and (min-width: 46.25em) {
+    .secondary-toggle {
+        height: 115px;
+        width: 56px;
+    }
+}
+*/
+#sidebar {
+  height: 0; }
+
+.site-branding {
+  z-index: 1000;
+  min-height: 0 !important; }
+  @media screen and (min-width: 55em) {
+    .site-branding {
+      min-height: 0px !important; } }
+  @media screen and (min-width: 46.25em) {
+    .site-branding {
+      min-height: 0px !important; } }
+
+.site-branding.active {
+  background-color: #FFF;
+  position: absolute;
+  width: 100%; }
+
+.secondary-toggle:focus,
+.secondary-toggle:hover {
+  background-color: transparent;
+  border: transparent; }
+
+.menu__open {
+  display: none;
+  position: absolute;
+  background-color: #FFF;
+  width: 100%;
+  left: 0;
+  padding: 0;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto; }
+  .menu__open .menu-main-menu-container {
+    margin: 0 auto;
+    width: 100%; }
+  .menu__open ul {
+    display: inline;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; }
+  .menu__open li {
+    margin-top: 3em;
+    font-weight: bold; }
+
+.menu__open.active {
+  display: inline;
+  top: 50px; }
+
+.secondary-toggle {
+  color: #333;
+  line-height: 40px;
+  width: 40px; }

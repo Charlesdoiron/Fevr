@@ -1,0 +1,98 @@
+a.post-thumbnail:hover,
+a.post-thumbnail:focus {
+    opacity: 1;
+}
+
+.home article {
+    margin: 0 !important;
+    padding: 0;
+    margin-top: -57px !important;
+    border: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .home article {
+        border: 0 !important;
+    }
+}
+
+.home img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    width: 100%;
+    height: 100%;
+}
+
+.home .site-main {
+    padding: 0;
+}
+
+.home .entry-title {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .home .entry-title {
+        font-size: 20px;
+        top: 40%;
+    }
+}
+
+.home .entry-title a {
+    color: #FFF;
+    text-rendering: optimizeLegibility;
+    font-family: 'Avenir-Book', 'sans-serif';
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
+}
+
+.mask-title {
+    background: #FFF;
+    width: 60%;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    /* top: 0; */
+    /* bottom: 0; */
+    margin: 0 auto;
+    transition: all 1s;
+}
+
+.mask-title-animation {
+    height: 2px;
+    width: 40px;
+    transition: all 1s;
+}
+.home .entry-footer,
+.home .entry-content {
+    display: none;
+}
+/*MASK*/
+
+.mask__project {
+    background-color: #000;
+    width: 100%;
+    height: 0px;
+    transform: translateX(100%);
+    position: absolute;
+    transition: all 1s;
+    z-index: 1;
+    /*-webkit-animation: maskProject;
+    -moz-animation:maskProject;
+    -o-animation:maskProject;*/
+}
+/*@keyframes maskProject {
+  0%   { transform: translateX(100%); }
+  50% { transform: translateX(0);}
+  90% { transform: translateX(0);}
+  100% { transform: translateX(-100%);}
+}*/

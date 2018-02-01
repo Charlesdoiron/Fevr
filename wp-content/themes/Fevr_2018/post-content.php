@@ -15,10 +15,15 @@
 		// Post thumbnail.
 		twentyfifteen_post_thumbnail();
 	?>
+<div class="page__close">
+	<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/pictos/close.svg" alt="">
+	</a>
+	
+</div>
 
 <!-- VIDEO 360 FULL SCREEN  -->
-<div class="videoTest" style="height: 80vh">
-		
+<div class="video360">	
 		<iframe 
 		width="100%" 
 		height="100%" 
@@ -27,37 +32,45 @@
 		webkitallowfullscreen mozallowfullscreen allowfullscreen>
 		</iframe>
 </div>
-
 <!-- END OF VIDEO -->
-	<header class="entry-header">
-		<?php
-			if ( is_single() ) :
-				the_title( '<h1 class="entry-title title__video__post">', '</h1>' );
-			else :
-				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-			endif;
-		?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading %s', 'twentyfifteen' ),
-				the_title( '<span class="screen-reader-text">', '</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
-				'separator'   => '<span class="screen-reader-text">, </span>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
+<div class="post__container">
+<div class="post__nav-prev">
+	<img src="<?php echo get_stylesheet_directory_uri(); ?>/pictos/arrow.svg" alt="">
+</div>
+	<div class="post__desc">
+		<header class="entry-header">
+			<?php
+				if ( is_single() ) :
+					the_title( '<h1 class="entry-title title__video__post">', '</h1>' );
+				else :
+					the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+				endif;
+			?>
+		</header><!-- .entry-header -->
+		
+		<div class="entry-content">
+			<?php
+				/* translators: %s: Name of current post */
+				the_content( sprintf(
+					__( 'Continue reading %s', 'twentyfifteen' ),
+					the_title( '<span class="screen-reader-text">', '</span>', false )
+				) );
+		
+				wp_link_pages( array(
+					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
+					'after'       => '</div>',
+					'link_before' => '<span>',
+					'link_after'  => '</span>',
+					'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
+					'separator'   => '<span class="screen-reader-text">, </span>',
+				) );
+			?>
+		</div><!-- .entry-content -->
+	</div>
+	<div class="post__nav-next">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/pictos/arrow.svg" alt="">
+	</div>
+</div>
 	<!-- MAKING OF FULL WIDTH -->
 	<?php if ( have_rows('making_of') ): ?>
     <?php while ( have_rows('making_of') ): the_row(); ?>

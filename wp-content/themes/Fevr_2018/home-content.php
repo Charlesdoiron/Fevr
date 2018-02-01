@@ -11,10 +11,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php
-		// Post thumbnail.
-		twentyfifteen_post_thumbnail();
-	?>
+	
+		<?php twentyfifteen_post_thumbnail();?>
+	
+
 
 <!-- END OF VIDEO -->
 	<header class="entry-header">

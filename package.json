@@ -1,0 +1,23 @@
+{
+  "name": "fevr-preprod",
+  "version": "1.0.0",
+  "description": "Agence de création de contenu en VR et 360° 📽",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charlesdoiron/Fevr.git"
+  },
+  "author": "Charles d'Oiron // Binome.me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Charlesdoiron/Fevr/issues"
+  },
+  "homepage": "https://github.com/Charlesdoiron/Fevr#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

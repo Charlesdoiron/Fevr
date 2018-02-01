@@ -25,6 +25,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
 <!-- VIDEO 360 FULL SCREEN  -->
 <div class="videoTest" style="height: 80vh">
 		<!-- METTRE AUTOPLAY A 1 -->

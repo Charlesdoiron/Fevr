@@ -1,0 +1,125 @@
+.contact__main {
+    background-color: #000
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+#map__container {
+    width: 60%;
+    transform: translateX(30px);
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.form__container {
+    width: 70%;
+    padding: 20px;
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+.mapChangeWith {
+    width: 100% !important;
+    transform: translateX(0px)!important;
+    transition-timing-function: ease-in-out;
+    transition: all 1s;
+}
+
+.adress {
+    width: 100%;
+    line-height: 21px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    border-right: 1px solid #333333;
+    padding-right: 10px;
+    color: #444444;
+}
+
+input,
+input:focus {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #444444; 
+    max-width: 100%;
+
+}
+
+::placeholder {
+    font-family: 'Playfair Display', serif;
+    color: #444444;
+}
+
+textarea,
+textarea:focus {
+    min-width: 100%;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid #444444;
+    max-width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.two-col-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wpcf7-form-control-wrap {
+    margin-right: 5px;
+}
+
+input[type="button"] {
+    color: #fff;
+    background-color: #8d88be;
+    border-color: #7d78b5;
+    padding: 6px;
+}
+
+span.wpcf7-not-valid-tip {
+    color: #585858;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.wpcf7-validation-errors {
+    display: none !important;
+}
+
+button#tab_contact,
+button#tab_job,
+input.wpcf7-form-control.wpcf7-submit {
+    background: transparent;
+    border: 1px solid #333333;
+    transition: all 2s;
+    color: #333333;
+    font-weight: normal;
+    font-family: inherit;
+    min-width: 210px;
+    letter-spacing: 10px;
+    margin: 10px;
+}
+
+
+button#tab_contact:hover,
+button#tab_job:hover,
+input.wpcf7-form-control.wpcf7-submit:hover {
+    background: transparent;
+    border: 1px solid transparent;
+    background-color: #333333;
+    transition: all 2s;
+}
+button#tab_contact:active,
+button#tab_job:active {
+    background: #585858;
+
+}

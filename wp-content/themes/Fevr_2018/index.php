@@ -18,6 +18,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+								<div class="mask__project"></div>
+
 <!-- 		<div class="videoTest" style="height: 100vh">
 		
 		<iframe 
