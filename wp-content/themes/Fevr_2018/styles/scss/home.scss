@@ -6,7 +6,7 @@ a.post-thumbnail:focus {
 .home article {
     margin: 0 !important;
     padding: 0;
-    margin-top: -57px !important;
+    /*margin-top: -57px !important;*/
     border: 0;
 }
 
@@ -86,13 +86,8 @@ a.post-thumbnail:focus {
     position: absolute;
     transition: all 1s;
     z-index: 1;
-    /*-webkit-animation: maskProject;
-    -moz-animation:maskProject;
-    -o-animation:maskProject;*/
 }
-/*@keyframes maskProject {
-  0%   { transform: translateX(100%); }
-  50% { transform: translateX(0);}
-  90% { transform: translateX(0);}
-  100% { transform: translateX(-100%);}
-}*/
+
+.post-thumbnail{
+margin-bottom: 0;
+}

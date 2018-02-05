@@ -22,19 +22,17 @@ let logo = document.querySelector('.custom-logo-link img')
     }
 })
 
-//BURGER
+//MENU
 
+const burger = document.querySelector('.secondary-toggle')
+const menuBkg = document.querySelector('.site-branding')
 
-let burger = document.querySelector('.secondary-toggle')
-let burgerBefore = window.getComputedStyle(document.querySelector('.secondary-toggle'), ':before').getPropertyValue('content')
-
-console.log(burgerBefore)
-const menuOpen = document.querySelector('.menu__open')
 
 burger.addEventListener('click', function () {
-    menuOpen.classList.toggle('active')
-    burgerBefore = "𝕏" !important;
-    burger.style.content = "𝕏";
-    console.log(burgerBefore)
-    console.log(burger.style.content)
+    menuBkg.classList.toggle('fullHeight')
+            logo.src = "http://localhost:8888/wp-content/uploads/2017/09/logo.png"
+
 })
+    
+
+

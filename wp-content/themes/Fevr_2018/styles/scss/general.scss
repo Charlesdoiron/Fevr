@@ -1,6 +1,10 @@
 
 
 /*GENERAL*/
+a:focus, a:active, a:hover {
+    outline: 0 !important;
+    outline: 0 !important;
+}
 
 @media screen and (min-width: 59.6875em){
 .site {
@@ -8,6 +12,7 @@
     max-width: 100%;
 }
 }
+
 body,
 p {
     font-family: 'Avenir-Book';
@@ -37,7 +42,9 @@ body{
 .show {
     display: block;
 }
-
+.fullHeight{
+    height: 100vh;
+}
 .text-center{
 	text-align: center;
 }
