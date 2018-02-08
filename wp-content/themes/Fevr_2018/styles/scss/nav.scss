@@ -59,10 +59,20 @@
     }
 }
 
+.site-branding.active {
+    .main-navigation .current-menu-item>a,
+    .main-navigation .current-menu-item>a.active,
+    .main-navigation .current-menu-ancestor>a {
+        font-weight: inherit;
+        border-bottom: 3px solid #000;
+    }
+}
+
+
 .main-navigation ul {
     @media screen and (max-width: 954px) {
-    line-height: 11vh;
-}
+        line-height: 11vh;
+    }
 }
 
 .main-navigation ul,

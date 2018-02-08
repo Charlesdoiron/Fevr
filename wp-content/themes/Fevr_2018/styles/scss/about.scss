@@ -1,5 +1,5 @@
 
-
+/*NAV SETTINGS*/
 .page-template-template-about {
     .main-navigation li a {
         color: #000;
@@ -13,45 +13,37 @@
     }
 }
 
-// Colors
-$bg-color: #FFF;
-$dot-color: #A0A0A0;
-
-// Dimensions
-$dot-size: 1px;
-$dot-space: 22px;
-
-.bck-doted {
-    background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
-    background-size: $dot-space $dot-space;
-}
-
-
+/*TITLE*/
 .about__title {
-    font-size: 40px;
+   /* font-size: 40px;
     color: #969696;
     font-family: 'avenir';
-    font-weight: 100;
+    font-weight: 100;*/
+    font-family: 'Avenir-Book';
+    font-weight: 900;
+    font-size: 1.5em;
+    margin: 4% 0;
+    letter-spacing: 1px;
+    color: #585858;
 }
 
 .about__p {
     padding: 0 10%;
     text-align: justify;
-    color: #585858;
+    color: #191919;
     font-size: 1.2em;
     margin: 10% 0;
-       @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         padding-top: 15%;
     }
 }
+
+/*OFFER*/
 
 .about__offer {
     padding-top: 20%;
     background-color: #191919;
 }
-
 .about__offer__list-item {
     display: flex;
     justify-content: space-between;
@@ -62,16 +54,13 @@ $dot-space: 22px;
         align-items: center;
     }
 }
-
 .about__slider {
     display: flex;
     margin-bottom: -17%;
 }
-
 .slider {
     width: 100%;
 }
-
 .about__slider-mask {
     background-color: #000;
     height: 424px;
@@ -80,21 +69,22 @@ $dot-space: 22px;
     right: 0;
     transition: all 0.5s
 }
-
 .about__first-column {
-    width: 65%;
+    display: flex;
+    width: 70%;
 }
-
 .about__second-column {
-    width: 35%;
+    width: 30%;
     text-align: center;
+      @media screen and (max-width: 768px) {
+    width: 60%;
+    }
     img {
         width: 60%;
         margin: 0 auto;
         padding-top: 5%;
     }
 }
-
 .about__offer-title {
     color: #969696;
     font-size: 0.9em;
@@ -106,7 +96,6 @@ $dot-space: 22px;
         text-align: center;
     }
 }
-
 .about__offer-p {
     max-width: 18em;
     margin-bottom: 4em;
@@ -114,7 +103,7 @@ $dot-space: 22px;
     font-size: 0.8em;
     font-weight: 100;
     font-family: "avenir";
-       @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         justify-content: center;
         max-width: 100%;
         align-items: center;
@@ -123,41 +112,52 @@ $dot-space: 22px;
         margin-bottom: 2em;
     }
 }
-
 .about__row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     @media screen and (max-width: 768px) {
         flex-direction: column;
         justify-content: center;
     }
 }
-
-.about__devices {
-    background-color: #141414;
-    display: flex;
-    justify-content: space-between;
-      @media screen and (max-width: 768px) {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+.offer {
+    flex-shrink: 0;
+    width: 50%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
     }
 }
 
+/*DEVICES */
+
+.about__devices {
+    display: flex;
+    justify-content: space-between;
+     background-color: #191919;
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+
+    }
+}
 .about__devices-desc {
     margin: 0 auto;
     padding-top: 9%;
-      @media screen and (max-width: 768px) {
+    p {
+    color: #969696;
+    font-size: 0.9em;
+    font-weight: 100;
+    text-align: center;
+    font-family: "avenir";
+    }
+    @media screen and (max-width: 768px) {
         padding-top: 2%;
         padding-bottom: 2%;
     }
-    .p {
-        color: #585858;
-        text-align: center;
-        font-size: 1.3em;
-    }
+   
 }
-
 .devices__picto {
     display: flex;
     justify-content: space-around;
@@ -165,29 +165,40 @@ $dot-space: 22px;
         margin-right: 10%;
     }
 }
-
 .about__devices-img {
     width: 50%;
-     @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         margin: 0 auto;
     }
 }
 
+/*CLIENTS*/
+
 .about__clients {
     background-color: #FFF;
     padding: 1% 0;
-    .about__title {
-        margin: 2% 0;
+    margin-top: -12%;
+    z-index: 3;
+    position: relative;
+    @media screen and (max-width: 955px) {
+    margin-top: -8%;
+    }
+    @media screen and (max-width: 768px) {
+    margin-top: 0;
     }
 }
-
 .logos__container {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
-
 .clients__logo {
     width: 10%;
     height: 100%;
+     @media screen and (max-width: 768px) {
+        width: 30%;
+        height: 100%;
+
+    }
 }

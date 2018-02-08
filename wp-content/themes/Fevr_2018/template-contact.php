@@ -20,14 +20,13 @@ Template Name: Contact
  */
 
 get_header(); ?>
-        <div id="primary" class="content-area">
+        <div id="primary" class="content-area" >
             <main id="main" class="site-main contact__main" role="main" style="padding: 0">
                 <div class="contact__container">
                     <div class="form__container">
                         <div class="adress">
-                          <p>Fevr
-                          <br> 4 rue de Jarente
-                          <br> 75002 Paris</p>
+                          <div class="fr"><?php the_field('adress_fr') ?></div>
+                          <div class=""><?php the_field('adress_us') ?></div>
                         </div>
                         <div class="select_form">
                           <button id="tab_contact">Contact</button>
@@ -42,6 +41,12 @@ get_header(); ?>
                     </div>
                     <div class="map__container" id="map__container">
                         <div id="map"></div>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <!--   <script type="text/javascript">
+                            $.get("https://ipinfo.io", function(response) {
+                            console.log(response.country);
+                            }, "jsonp")
+                        </script> -->
                         <!-- Map -->
                         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/initializeMap.js"></script>
                         <!-- Animation Map -->

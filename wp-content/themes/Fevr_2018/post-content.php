@@ -34,14 +34,14 @@
 </div>
 <!-- END OF VIDEO -->
 <div class="post__container">
-<div class="post__nav-prev">
+<!-- <div class="post__nav-prev">
 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/pictos/arrow.svg" alt="">
-</div>
+</div> -->
 	<div class="post__desc">
 		<header class="entry-header">
 			<?php
 				if ( is_single() ) :
-					the_title( '<h1 class="entry-title title__video__post">', '</h1>' );
+					the_title( '<h1 class="entry-title title__video__post ">', '</h1>' );
 				else :
 					the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 				endif;
@@ -67,9 +67,9 @@
 			?>
 		</div><!-- .entry-content -->
 	</div>
-	<div class="post__nav-next">
+<!-- 	<div class="post__nav-next">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/pictos/arrow.svg" alt="">
-	</div>
+	</div> -->
 </div>
 	<!-- MAKING OF FULL WIDTH -->
 	<?php if ( have_rows('making_of') ): ?>
@@ -99,3 +99,4 @@
 	
 
 </article><!-- #post-## -->
+

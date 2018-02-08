@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'specify_personal_expandedBlk';
+    src: url('fevrtypo-webfont.eot');
+    src: url('fevrtypo-webfont.eot') format('embedded-opentype'),
+         url('fevrtypo-webfont.woff2') format('woff2'),
+         url('fevrtypo-webfont.woff') format('woff'),
+         url('fevrtypo-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
   font-family: 'Avenir-Book';

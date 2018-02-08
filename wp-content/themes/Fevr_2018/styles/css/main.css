@@ -178,7 +178,7 @@ a.post-thumbnail:focus {
   margin: 0 auto; }
 
 .entry-content p {
-  color: #585858;
+  color: #7A7676;
   font-size: 0.8em;
   font-family: 'Avenir-Book';
   font-weight: 100;
@@ -203,19 +203,26 @@ body.single {
   display: none; }
 
 .title__video__post {
-  text-rendering: optimizeLegibility;
   font-family: 'Avenir-Book';
-  font-weight: 100;
-  font-size: 1.3em;
+  font-weight: 900;
+  font-size: 1.5em;
   margin-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   letter-spacing: 1px;
-  color: #969696; }
+  color: #585858;
+  text-transform: lowercase; }
+  .title__video__post::first-letter {
+    text-transform: uppercase; }
+  .title__video__post:first-letter {
+    text-transform: uppercase; }
 
 .single .entry-content {
   color: #d4d4d4;
   padding: 0 15em 5em 5em;
   text-align: justify; }
+
+.capitalize {
+  text-transform: uppercase; }
 
 /*.post__desc {
     padding: 2em;
@@ -225,7 +232,7 @@ body.single {
   display: flex;
   justify-content: center;
   width: 80%;
-  background-color: #191919; }
+  /* background-color: #191919;*/ }
 
 .page__close {
   display: flex;
@@ -247,6 +254,11 @@ body.single {
     height: 80vh;
     padding: 0 5%; }
 
+/*POST NAV*/
+.nav-links {
+  display: flex;
+  width: 100%; }
+
 .post__nav-prev,
 .post__nav-next {
   width: 20%;
@@ -259,6 +271,26 @@ body.single {
 .post-navigation .nav-next {
   background-image: none !important; }
 
+.post-navigation .nav-previous span,
+.post-navigation .nav-next span {
+  color: #2f2f2f !important;
+  z-index: 9;
+  position: relative; }
+
+.post-navigation .nav-previous a:before,
+.post-navigation .nav-next a:before,
+.post-navigation .nav-previous a:hover,
+.post-navigation .nav-next a:hover {
+  background-color: #000 !important;
+  color: #2f2f2f !important; }
+
+.post-navigation .nav-previous,
+.post-navigation .nav-next,
+.post-navigation .nav-previous:hover,
+.post-navigation .nav-next:hover {
+  background-image: none !important; }
+
+/*NAV SETTINGS*/
 .page-template-template-about .main-navigation li a {
   color: #000;
   font-family: 'Avenir-Book', 'sans-serif';
@@ -269,26 +301,30 @@ body.single {
   font-weight: inherit;
   border-bottom: 3px solid #000; }
 
-.bck-doted {
-  background: linear-gradient(90deg, #FFF 21px, transparent 1%) center, linear-gradient(#FFF 21px, transparent 1%) center, #A0A0A0;
-  background-size: 22px 22px; }
-
+/*TITLE*/
 .about__title {
-  font-size: 40px;
-  color: #969696;
-  font-family: 'avenir';
-  font-weight: 100; }
+  /* font-size: 40px;
+    color: #969696;
+    font-family: 'avenir';
+    font-weight: 100;*/
+  font-family: 'Avenir-Book';
+  font-weight: 900;
+  font-size: 1.5em;
+  margin: 4% 0;
+  letter-spacing: 1px;
+  color: #585858; }
 
 .about__p {
   padding: 0 10%;
   text-align: justify;
-  color: #585858;
+  color: #191919;
   font-size: 1.2em;
   margin: 10% 0; }
   @media screen and (max-width: 768px) {
     .about__p {
       padding-top: 15%; } }
 
+/*OFFER*/
 .about__offer {
   padding-top: 20%;
   background-color: #191919; }
@@ -319,11 +355,15 @@ body.single {
   transition: all 0.5s; }
 
 .about__first-column {
-  width: 65%; }
+  display: flex;
+  width: 70%; }
 
 .about__second-column {
-  width: 35%;
+  width: 30%;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .about__second-column {
+      width: 60%; } }
   .about__second-column img {
     width: 60%;
     margin: 0 auto;
@@ -358,33 +398,44 @@ body.single {
 
 .about__row {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
   @media screen and (max-width: 768px) {
     .about__row {
       flex-direction: column;
       justify-content: center; } }
 
+.offer {
+  flex-shrink: 0;
+  width: 50%; }
+  @media screen and (max-width: 768px) {
+    .offer {
+      width: 100%; } }
+
+/*DEVICES */
 .about__devices {
-  background-color: #141414;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #191919; }
   @media screen and (max-width: 768px) {
     .about__devices {
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: center;
       text-align: center; } }
 
 .about__devices-desc {
   margin: 0 auto;
   padding-top: 9%; }
+  .about__devices-desc p {
+    color: #969696;
+    font-size: 0.9em;
+    font-weight: 100;
+    text-align: center;
+    font-family: "avenir"; }
   @media screen and (max-width: 768px) {
     .about__devices-desc {
       padding-top: 2%;
       padding-bottom: 2%; } }
-  .about__devices-desc .p {
-    color: #585858;
-    text-align: center;
-    font-size: 1.3em; }
 
 .devices__picto {
   display: flex;
@@ -398,23 +449,36 @@ body.single {
     .about__devices-img {
       margin: 0 auto; } }
 
+/*CLIENTS*/
 .about__clients {
   background-color: #FFF;
-  padding: 1% 0; }
-  .about__clients .about__title {
-    margin: 2% 0; }
+  padding: 1% 0;
+  margin-top: -12%;
+  z-index: 3;
+  position: relative; }
+  @media screen and (max-width: 955px) {
+    .about__clients {
+      margin-top: -8%; } }
+  @media screen and (max-width: 768px) {
+    .about__clients {
+      margin-top: 0; } }
 
 .logos__container {
   display: flex;
   justify-content: space-around;
-  align-items: flex-end; }
+  align-items: flex-end;
+  flex-wrap: wrap; }
 
 .clients__logo {
   width: 10%;
   height: 100%; }
+  @media screen and (max-width: 768px) {
+    .clients__logo {
+      width: 30%;
+      height: 100%; } }
 
 .contact__main {
-  background-color: #000; }
+  background-color: #191919; }
 
 .contact__container {
   display: flex;
@@ -430,7 +494,8 @@ body.single {
 
 .form__container {
   width: 70%;
-  padding: 20px; }
+  padding: 0 10px 0 20px;
+  overflow: scroll; }
 
 #map {
   height: 100vh;
@@ -443,32 +508,57 @@ body.single {
   transition: all 1s; }
 
 .adress {
+  font-size: 0.8em;
   width: 100%;
   line-height: 21px;
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
-  border-right: 1px solid #333333;
   padding-right: 10px;
   color: #444444; }
+  .adress .fr {
+    text-align: right;
+    padding-right: 35px; }
+  .adress .us {
+    padding-left: 15px;
+    text-align: left; }
 
 input,
 input:focus {
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #444444;
-  max-width: 100%; }
+  border-bottom: 1px solid rgba(88, 88, 88, 0.37);
+  max-width: 100%;
+  font-family: 'Avenir-book';
+  color: rgba(189, 189, 188, 0.7); }
+
+textarea {
+  font-family: 'Avenir-book';
+  color: rgba(189, 189, 188, 0.7); }
+
+input[type="text"],
+input[type="email"] {
+  width: 99%;
+  padding: 0;
+  font-size: 1em; }
 
 ::placeholder {
-  font-family: 'Playfair Display', serif;
-  color: #444444; }
+  font-family: 'Avenir-Book';
+  font-weight: 100;
+  color: rgba(150, 150, 150, 0.7);
+  padding: 0 !important;
+  font-size: 1em; }
+
+.labelModif {
+  position: relative;
+  bottom: 29px; }
 
 textarea,
 textarea:focus {
   min-width: 100%;
   margin-top: 10px;
   background: transparent;
-  border: 1px solid #444444;
+  border: 1px solid rgba(88, 88, 88, 0.37);
   max-width: 100%;
   max-height: 150px;
   min-height: 150px; }
@@ -483,8 +573,13 @@ textarea:focus {
 input[type="button"] {
   color: #fff;
   background-color: #8d88be;
-  border-color: #7d78b5;
+  border-color: rgba(88, 88, 88, 0.37);
   padding: 6px; }
+
+input[type="file"] {
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #333; }
 
 span.wpcf7-not-valid-tip {
   color: #585858;
@@ -494,21 +589,34 @@ span.wpcf7-not-valid-tip {
 .wpcf7-validation-errors {
   display: none !important; }
 
-button#tab_contact,
-button#tab_job,
 input.wpcf7-form-control.wpcf7-submit {
   background: transparent;
-  border: 1px solid #333333;
+  border: 1px solid rgba(88, 88, 88, 0.37);
   transition: all 2s;
-  color: #333333;
+  color: #969696;
   font-weight: normal;
   font-family: inherit;
   min-width: 210px;
-  letter-spacing: 10px;
-  margin: 10px; }
+  margin: 10px;
+  font-family: 'avenir';
+  font-weight: 100;
+  text-transform: inherit; }
 
-button#tab_contact:hover,
-button#tab_job:hover,
+button#tab_contact,
+button#tab_job {
+  background: transparent;
+  color: rgba(150, 150, 150, 0.7);
+  font-weight: normal;
+  font-family: inherit;
+  min-width: 210px;
+  margin: 10px;
+  font-size: 1em;
+  font-family: 'Avenir-Book';
+  font-weight: 100;
+  text-transform: inherit;
+  transition: all 0.5s;
+  transition-timing-function: ease-in-out; }
+
 input.wpcf7-form-control.wpcf7-submit:hover {
   background: transparent;
   border: 1px solid transparent;
@@ -516,8 +624,56 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   transition: all 2s; }
 
 button#tab_contact:active,
-button#tab_job:active {
-  background: #585858; }
+button#tab_job:active,
+button#tab_contact:focus,
+button#tab_job:focus {
+  border-bottom: 10px solid #363636;
+  line-height: 0px;
+  transition: all 0.5s;
+  transition-timing-function: ease-in-out; }
+
+button#tab_contact:avisited,
+button#tab_job:avisited,
+button#tab_contact:visited,
+button#tab_job:visited {
+  border-bottom: 0;
+  line-height: 0px;
+  transition: all 0.5s;
+  transition-timing-function: ease-in-out; }
+
+.select_form {
+  display: flex;
+  justify-content: space-evenly; }
+
+#custom-file-input::-webkit-file-upload-button {
+  visibility: hidden; }
+
+/*input[type="file"]{
+color: transparent;
+}*/
+#custom-file-input::before {
+  display: inline-block;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 10pt;
+  background: transparent;
+  border: 1px solid rgba(88, 88, 88, 0.37);
+  transition: all 2s;
+  color: #333;
+  font-weight: normal;
+  font-family: inherit;
+  margin: 10px;
+  font-family: 'avenir';
+  font-weight: 100; }
+
+#custom-file-input:hover::before {
+  border-color: black; }
+
+#custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); }
 
 #sidebar {
   width: 100%;
@@ -572,6 +728,12 @@ button#tab_job:active {
       width: 70px;
       margin: 0 auto;
       font-weight: bold; } }
+
+.site-branding.active .main-navigation .current-menu-item > a,
+.site-branding.active .main-navigation .current-menu-item > a.active,
+.site-branding.active .main-navigation .current-menu-ancestor > a {
+  font-weight: inherit;
+  border-bottom: 3px solid #000; }
 
 @media screen and (max-width: 954px) {
   .main-navigation ul {

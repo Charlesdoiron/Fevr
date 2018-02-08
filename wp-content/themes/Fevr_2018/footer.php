@@ -44,7 +44,9 @@
    const script= document.createElement('script');
    script.type= 'text/javascript';
    script.src= "<?php echo get_stylesheet_directory_uri(); ?>/js/animationAbout.js";
-   footer.appendChild(script);}
+   footer.appendChild(script);
+ }
+
 
 
 	else if(document.querySelector('body').classList.contains('home')){
@@ -59,10 +61,14 @@
    script.type= 'text/javascript';
    script.src= "<?php echo get_stylesheet_directory_uri(); ?>/js/animationInsideProject.js";
    footer.appendChild(script);
-
 	}
+
+
+
 </script>
 
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/stickyHeader.js"></script> 
+
+
 </body>
 </html>

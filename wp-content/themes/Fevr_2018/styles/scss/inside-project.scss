@@ -19,7 +19,7 @@
 }
 
 .entry-content p {
-    color: #585858;
+    color: #7A7676;
     font-size: 0.8em;
     font-family: 'Avenir-Book';
     font-weight: 100;
@@ -51,20 +51,30 @@ body.single {
 }
 
 .title__video__post {
-    text-rendering: optimizeLegibility;
     font-family: 'Avenir-Book';
-    font-weight: 100;
-    font-size: 1.3em;
+    font-weight: 900;
+    font-size: 1.5em;
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     letter-spacing: 1px;
-    color: #969696;
+    color: #585858;
+    text-transform: lowercase;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+    &:first-letter {
+        text-transform: uppercase;
+    }
 }
 
 .single .entry-content {
     color: #d4d4d4;
     padding: 0 15em 5em 5em;
     text-align: justify;
+}
+
+.capitalize {
+    text-transform: uppercase;
 }
 
 
@@ -78,7 +88,7 @@ body.single {
     display: flex;
     justify-content: center;
     width: 80%;
-    background-color: #191919;
+    /* background-color: #191919;*/
 }
 
 .page__close {
@@ -86,13 +96,13 @@ body.single {
     justify-content: flex-end;
     margin-right: 2em;
     margin-bottom: 2em;
-    img{
-        transition : all 2s;
+    img {
+        transition: all 2s;
         opacity: 0.2;
         cursor: pointer;
     }
-    img:hover{
-        transition : all 2s;
+    img:hover {
+        transition: all 2s;
         opacity: 0.8;
         cursor: pointer;
     }
@@ -105,6 +115,16 @@ body.single {
         height: 80vh;
         padding: 0 5%;
     }
+}
+
+
+
+
+/*POST NAV*/
+
+.nav-links {
+    display: flex;
+    width: 100%;
 }
 
 .post__nav-prev,
@@ -121,5 +141,28 @@ body.single {
 }
 
 .post-navigation .nav-next {
+    background-image: none !important;
+}
+
+.post-navigation .nav-previous span,
+.post-navigation .nav-next span {
+    color: rgba(47, 47, 47, 1)!important;
+    z-index: 9;
+    position: relative;
+}
+
+.post-navigation .nav-previous a:before,
+.post-navigation .nav-next a:before,
+.post-navigation .nav-previous a:hover,
+.post-navigation .nav-next a:hover {
+    background-color: #000 !important;
+    color: rgba(47, 47, 47, 1)!important;
+}
+
+
+.post-navigation .nav-previous,
+.post-navigation .nav-next,
+.post-navigation .nav-previous:hover,
+.post-navigation .nav-next:hover {
     background-image: none !important;
 }

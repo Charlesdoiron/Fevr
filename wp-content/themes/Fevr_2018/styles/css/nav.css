@@ -52,6 +52,12 @@
       margin: 0 auto;
       font-weight: bold; } }
 
+.site-branding.active .main-navigation .current-menu-item > a,
+.site-branding.active .main-navigation .current-menu-item > a.active,
+.site-branding.active .main-navigation .current-menu-ancestor > a {
+  font-weight: inherit;
+  border-bottom: 3px solid #000; }
+
 @media screen and (max-width: 954px) {
   .main-navigation ul {
     line-height: 11vh; } }

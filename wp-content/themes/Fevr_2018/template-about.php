@@ -38,64 +38,40 @@ get_header(); ?>
 		</iframe>
 </div> -->
 					<p class="about__p">
-						360° and VR Video Agency located in central Paris. We are directors, storytellers, producers, sound designers and animators who are working together to deliver innovative and diversified aesthetic solutions for all kinds of projects and briefs.
+<?php the_field('about_intro')?>
 					</p>
 
 		</div>
 					<div class="about__slider-mask"></div>
 		<div class="about__slider">
-
 			<div class="slider"><?php echo do_shortcode('[smartslider3 slider=2]'); ?></div>
 		</div>
 		<div class="about__offer">
 			<h3 class="about__title text-center">What we offer</h3>
 			<div class="about__offer__list-item">
 				<div class="about__first-column">
-					<div class="about__list-1">
-							<div class="about__row">
-								<div>
-									<h4 class="about__offer-title">Consulting</h4>
-								<p class="about__offer-p">Anticipating the film industry's specificities / specific requirements</p>
-								</div>
-								<div>
-								<h4 class="about__offer-title">Storytelling</h4>
-								<p class="about__offer-p">Creating and writing the perfect script for an immersive experience</p>
-								</div>
-							</div>
-						<div class="about__row">
-							<div>
-									<h4 class="about__offer-title">Shooting</h4>
-								<p class="about__offer-p">Shooting with our RED solutions, Drone Alta 8, or RIG multi-camera DSLR Video 360</p>
-							</div>
-							<div>		
-								<h4 class="about__offer-title">Video Editing</h4>
-								<p class="about__offer-p">Editing the film for its final form (+stitching for any 360° videos)</p>
-							</div>
-						</div>
-							<div class="about__row">
-							<div>
-									<h4 class="about__offer-title">Motion Design</h4>
-								<p class="about__offer-p">Subtitles and FX in 2D and 3D, with a 16/9 format or 360 video</p>
-							</div>
-							<div>		
-								<h4 class="about__offer-title">Sound Design</h4>
-								<p class="about__offer-p">Improving overall immersion experience thanks to spacial sound and sound design</p>
-							</div>
-						</div>
-</div>
-				</div>
-	
-				<div class="about__second-column">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/pictos/mantis.png" alt="">
-				</div>
-				
+									<div class="about__row">
+											<?php if ( have_rows('about_offres') ): ?>
+	    									<?php while ( have_rows('about_offres') ): the_row(); ?>
+	    										<div class="offer">
+	    										<h4 class="about__offer-title"><?php the_sub_field('offre_title'); ?></h4>
+													<p class="about__offer-p"><?php the_sub_field('offre_text'); ?></p>
+												</div>
+	  										<?php endwhile; ?>
+	  									<?php endif; ?>
+	  										</div>	
 			</div>
+				<div class="about__second-column">
+					<img src="<?php the_field('about_img'); ?>" alt="">
+				</div>
+		</div>
+	</div>
 			<div class="about__devices">
 				<div class="about__devices-img">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/pictos/fevr_vr.png" alt="">
+					<img src="<?php the_field('about_img-2'); ?>" alt="">
 				</div>
 				<div class="about__devices-desc">
-					<p>Videos available on all devices</p>
+					<p><?php the_field('quote_device')?></p>
 					<div class="devices__picto">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/pictos/Vr_picto.svg" alt="">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/pictos/Responsive_picto.svg" alt="">

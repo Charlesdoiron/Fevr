@@ -11,11 +11,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
 		<?php twentyfifteen_post_thumbnail();?>
-	
-
-
 <!-- END OF VIDEO -->
 	<header class="entry-header">
 		<?php
@@ -46,12 +42,5 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
-
-			
 	</div><!-- .entry-content -->
-
-	
-
-	
-
 </article><!-- #post-## -->
