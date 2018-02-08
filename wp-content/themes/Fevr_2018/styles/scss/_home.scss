@@ -43,19 +43,19 @@ a.post-thumbnail:focus {
 }
 
 .home .entry-title a {
-    color: #FFF;
+    color: $white;
     text-rendering: optimizeLegibility;
-    font-family: 'Avenir-Book', 'sans-serif';
+    font-family: $primary-font;
     font-weight: 400;
     font-size: 1.5em;
     letter-spacing: 0.1em;
-    color: #ffffff;
+    color: $white;
     text-transform: uppercase;
     text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
 }
 
 .mask-title {
-    background: #FFF;
+    background: $white;
     width: 60%;
     height: 100px;
     position: absolute;
@@ -79,7 +79,7 @@ a.post-thumbnail:focus {
 /*MASK*/
 
 .mask__project {
-    background-color: #000;
+    background-color: $black;
     width: 100%;
     height: 0px;
     transform: translateX(100%);

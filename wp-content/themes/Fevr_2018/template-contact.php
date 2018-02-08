@@ -25,8 +25,10 @@ get_header(); ?>
                 <div class="contact__container">
                     <div class="form__container">
                         <div class="adress">
-                          <div class="fr"><?php the_field('adress_fr') ?></div>
-                          <div class=""><?php the_field('adress_us') ?></div>
+                          <div class="fr">
+                            <?php the_field('adress_fr') ?>
+                            </div>
+                          <div class="us"><?php the_field('adress_us') ?></div>
                         </div>
                         <div class="select_form">
                           <button id="tab_contact">Contact</button>
@@ -42,11 +44,6 @@ get_header(); ?>
                     <div class="map__container" id="map__container">
                         <div id="map"></div>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                      <!--   <script type="text/javascript">
-                            $.get("https://ipinfo.io", function(response) {
-                            console.log(response.country);
-                            }, "jsonp")
-                        </script> -->
                         <!-- Map -->
                         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/initializeMap.js"></script>
                         <!-- Animation Map -->

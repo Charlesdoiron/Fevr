@@ -1,3 +1,5 @@
+/*COLOR*/
+/*FONTS */
 @font-face {
   font-family: 'Avenir-Book';
   src: url("../fonts/Avenir-Book.eot") format("embedded-opentype");
@@ -41,6 +43,8 @@ img.custom-logo {
 .us__adress {
   max-width: 90px; }
 
+/*COLOR*/
+/*FONTS */
 /*GENERAL*/
 a:focus, a:active, a:hover {
   outline: 0 !important;
@@ -51,9 +55,12 @@ a:focus, a:active, a:hover {
     margin: 0 auto;
     max-width: 100%; } }
 
+.site-main {
+  padding: 0; }
+
 body,
 p {
-  font-family: 'Avenir-Book'; }
+  font-family: "Avenir-Book"; }
 
 body {
   background-color: #FFF; }
@@ -119,11 +126,11 @@ a.post-thumbnail:focus {
 .home .entry-title a {
   color: #FFF;
   text-rendering: optimizeLegibility;
-  font-family: 'Avenir-Book', 'sans-serif';
+  font-family: "Avenir-Book";
   font-weight: 400;
   font-size: 1.5em;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: #FFF;
   text-transform: uppercase;
   text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1); }
 
@@ -180,7 +187,7 @@ a.post-thumbnail:focus {
 .entry-content p {
   color: #7A7676;
   font-size: 0.8em;
-  font-family: 'Avenir-Book';
+  font-family: "Avenir-Book";
   font-weight: 100;
   margin: 0; }
 
@@ -203,7 +210,7 @@ body.single {
   display: none; }
 
 .title__video__post {
-  font-family: 'Avenir-Book';
+  font-family: "Avenir-Book";
   font-weight: 900;
   font-size: 1.5em;
   margin-top: 10%;
@@ -293,7 +300,7 @@ body.single {
 /*NAV SETTINGS*/
 .page-template-template-about .main-navigation li a {
   color: #000;
-  font-family: 'Avenir-Book', 'sans-serif';
+  font-family: "Avenir-Book";
   text-transform: uppercase; }
 
 .page-template-template-about .main-navigation .current-menu-item > a,
@@ -303,21 +310,17 @@ body.single {
 
 /*TITLE*/
 .about__title {
-  /* font-size: 40px;
-    color: #969696;
-    font-family: 'avenir';
-    font-weight: 100;*/
-  font-family: 'Avenir-Book';
+  font-family: "Avenir-Book";
   font-weight: 900;
   font-size: 1.5em;
   margin: 4% 0;
   letter-spacing: 1px;
-  color: #585858; }
+  color: #969696; }
 
 .about__p {
   padding: 0 10%;
   text-align: justify;
-  color: #191919;
+  color: #000;
   font-size: 1.2em;
   margin: 10% 0; }
   @media screen and (max-width: 768px) {
@@ -373,7 +376,7 @@ body.single {
   color: #969696;
   font-size: 0.9em;
   font-weight: 100;
-  font-family: "avenir"; }
+  font-family: "Avenir-Book"; }
   @media screen and (max-width: 768px) {
     .about__offer-title {
       flex-direction: column;
@@ -383,10 +386,10 @@ body.single {
 .about__offer-p {
   max-width: 18em;
   margin-bottom: 4em;
-  color: #585858;
+  color: #7A7676;
   font-size: 0.8em;
   font-weight: 100;
-  font-family: "avenir"; }
+  font-family: "Avenir-Book"; }
   @media screen and (max-width: 768px) {
     .about__offer-p {
       justify-content: center;
@@ -431,7 +434,7 @@ body.single {
     font-size: 0.9em;
     font-weight: 100;
     text-align: center;
-    font-family: "avenir"; }
+    font-family: "Avenir-Book"; }
   @media screen and (max-width: 768px) {
     .about__devices-desc {
       padding-top: 2%;
@@ -451,11 +454,14 @@ body.single {
 
 /*CLIENTS*/
 .about__clients {
-  background-color: #FFF;
+  background-color: #FBFBFB;
   padding: 1% 0;
   margin-top: -12%;
   z-index: 3;
-  position: relative; }
+  position: relative;
+  padding-bottom: 7%; }
+  .about__clients .about__title {
+    color: #000; }
   @media screen and (max-width: 955px) {
     .about__clients {
       margin-top: -8%; } }
@@ -495,7 +501,7 @@ body.single {
 .form__container {
   width: 70%;
   padding: 0 10px 0 20px;
-  overflow: scroll; }
+  /*overflow: scroll;*/ }
 
 #map {
   height: 100vh;
@@ -513,15 +519,19 @@ body.single {
   line-height: 21px;
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-right: 10px;
-  color: #444444; }
+  color: #969696; }
   .adress .fr {
     text-align: right;
-    padding-right: 35px; }
+    padding-right: 35px;
+    z-index: 22222;
+    cursor: pointer; }
   .adress .us {
     padding-left: 15px;
-    text-align: left; }
+    text-align: left;
+    z-index: 22222;
+    cursor: pointer; }
 
 input,
 input:focus {
@@ -529,29 +539,29 @@ input:focus {
   border: 0;
   border-bottom: 1px solid rgba(88, 88, 88, 0.37);
   max-width: 100%;
-  font-family: 'Avenir-book';
-  color: rgba(189, 189, 188, 0.7); }
+  font-family: "Avenir-Book";
+  color: #969696; }
 
 textarea {
-  font-family: 'Avenir-book';
-  color: rgba(189, 189, 188, 0.7); }
+  font-family: "Avenir-Book";
+  color: #363636; }
 
 input[type="text"],
 input[type="email"] {
+  color: #363636;
   width: 99%;
   padding: 0;
   font-size: 1em; }
 
 ::placeholder {
-  font-family: 'Avenir-Book';
+  font-family: "Avenir-Book";
   font-weight: 100;
-  color: rgba(150, 150, 150, 0.7);
+  color: #363636;
   padding: 0 !important;
   font-size: 1em; }
 
-.labelModif {
-  position: relative;
-  bottom: 29px; }
+label {
+  color: #969696; }
 
 textarea,
 textarea:focus {
@@ -571,7 +581,7 @@ textarea:focus {
   margin-right: 5px; }
 
 input[type="button"] {
-  color: #fff;
+  color: #FFF;
   background-color: #8d88be;
   border-color: rgba(88, 88, 88, 0.37);
   padding: 6px; }
@@ -579,7 +589,7 @@ input[type="button"] {
 input[type="file"] {
   color: #333;
   border: 0;
-  border-bottom: 1px solid #333; }
+  border-bottom: 1px solid rgba(88, 88, 88, 0.37); }
 
 span.wpcf7-not-valid-tip {
   color: #585858;
@@ -598,20 +608,20 @@ input.wpcf7-form-control.wpcf7-submit {
   font-family: inherit;
   min-width: 210px;
   margin: 10px;
-  font-family: 'avenir';
+  font-family: "Avenir-Book";
   font-weight: 100;
   text-transform: inherit; }
 
 button#tab_contact,
 button#tab_job {
   background: transparent;
-  color: rgba(150, 150, 150, 0.7);
+  color: #969696;
   font-weight: normal;
   font-family: inherit;
   min-width: 210px;
   margin: 10px;
   font-size: 1em;
-  font-family: 'Avenir-Book';
+  font-family: "Avenir-Book";
   font-weight: 100;
   text-transform: inherit;
   transition: all 0.5s;
@@ -648,9 +658,6 @@ button#tab_job:visited {
 #custom-file-input::-webkit-file-upload-button {
   visibility: hidden; }
 
-/*input[type="file"]{
-color: transparent;
-}*/
 #custom-file-input::before {
   display: inline-block;
   padding: 5px 8px;
@@ -660,13 +667,12 @@ color: transparent;
   cursor: pointer;
   font-size: 10pt;
   background: transparent;
-  border: 1px solid rgba(88, 88, 88, 0.37);
+  border: 1px solid #969696;
   transition: all 2s;
-  color: #333;
+  color: #363636;
   font-weight: normal;
-  font-family: inherit;
+  font-family: "Avenir-Book";
   margin: 10px;
-  font-family: 'avenir';
   font-weight: 100; }
 
 #custom-file-input:hover::before {
@@ -696,7 +702,7 @@ color: transparent;
 
 .main-navigation li a {
   color: #FFF;
-  font-family: 'Avenir-Book', 'sans-serif';
+  font-family: "Avenir-Book";
   text-transform: uppercase; }
   @media screen and (max-width: 954px) {
     .main-navigation li a {

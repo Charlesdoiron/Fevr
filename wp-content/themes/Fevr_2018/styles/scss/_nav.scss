@@ -21,11 +21,11 @@
 }
 
 .main-navigation li a {
-    color: #FFF;
-    font-family: 'Avenir-Book', 'sans-serif';
+    color: $white;
+    font-family: $primary-font;
     text-transform: uppercase;
     @media screen and (max-width: 954px) {
-        color: #000;
+        color: $black;
         z-index: 200;
     }
 }
@@ -44,14 +44,14 @@
 }
 
 .main-navigation li a.active {
-    color: #000;
+    color: $black;
 }
 
 .main-navigation .current-menu-item>a,
 .main-navigation .current-menu-item>a.active,
 .main-navigation .current-menu-ancestor>a {
     font-weight: inherit;
-    border-bottom: 3px solid #FFF;
+    border-bottom: 3px solid $white;
     @media screen and (max-width: 954px) {
         width:70px;
         margin: 0 auto;
@@ -64,7 +64,7 @@
     .main-navigation .current-menu-item>a.active,
     .main-navigation .current-menu-ancestor>a {
         font-weight: inherit;
-        border-bottom: 3px solid #000;
+        border-bottom: 3px solid $black;
     }
 }
 
@@ -109,13 +109,13 @@
     z-index: 1000;
     min-height: 0 !important;
     @media screen and (max-width: 954px) {
-        background-color: #FFF;
+        background-color: $white;
         min-height: 0px !important;
     }
 }
 
 .site-branding.active {
-    background-color: #FFF;
+    background-color: $white;
     position: absolute;
     width: 100%;
 }
@@ -129,7 +129,7 @@
 .menu__open {
     display: none;
     position: absolute;
-    background-color: #FFF;
+    background-color: $white;
     width: 100%;
     left: 0;
     padding: 0;

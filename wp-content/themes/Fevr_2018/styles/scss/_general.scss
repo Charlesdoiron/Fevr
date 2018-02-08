@@ -1,4 +1,5 @@
 
+@import 'variables';
 
 /*GENERAL*/
 a:focus, a:active, a:hover {
@@ -13,13 +14,16 @@ a:focus, a:active, a:hover {
 }
 }
 
+.site-main{
+    padding: 0;
+}
 body,
 p {
-    font-family: 'Avenir-Book';
+    font-family: $primary-font;
 
 }
 body{
-    background-color: #FFF;
+    background-color: $white;
 }
 
 @media screen and (min-width: 59.6875em) {

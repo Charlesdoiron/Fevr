@@ -1,36 +1,33 @@
-
 /*NAV SETTINGS*/
+
 .page-template-template-about {
     .main-navigation li a {
-        color: #000;
-        font-family: 'Avenir-Book', 'sans-serif';
+        color: $black;
+        font-family: $primary-font;
         text-transform: uppercase;
     }
     .main-navigation .current-menu-item>a,
     .main-navigation .current-menu-ancestor>a {
         font-weight: inherit;
-        border-bottom: 3px solid #000;
+        border-bottom: 3px solid $black;
     }
 }
 
 /*TITLE*/
+
 .about__title {
-   /* font-size: 40px;
-    color: #969696;
-    font-family: 'avenir';
-    font-weight: 100;*/
-    font-family: 'Avenir-Book';
+    font-family: $primary-font;
     font-weight: 900;
     font-size: 1.5em;
     margin: 4% 0;
     letter-spacing: 1px;
-    color: #585858;
+    color: $grey;
 }
 
 .about__p {
     padding: 0 10%;
     text-align: justify;
-    color: #191919;
+    color: $black;
     font-size: 1.2em;
     margin: 10% 0;
     @media screen and (max-width: 768px) {
@@ -38,12 +35,14 @@
     }
 }
 
+
 /*OFFER*/
 
 .about__offer {
     padding-top: 20%;
-    background-color: #191919;
+    background-color: $blackMate;
 }
+
 .about__offer__list-item {
     display: flex;
     justify-content: space-between;
@@ -54,30 +53,35 @@
         align-items: center;
     }
 }
+
 .about__slider {
     display: flex;
     margin-bottom: -17%;
 }
+
 .slider {
     width: 100%;
 }
+
 .about__slider-mask {
-    background-color: #000;
+    background-color: $black;
     height: 424px;
     z-index: 1;
     position: absolute;
     right: 0;
     transition: all 0.5s
 }
+
 .about__first-column {
     display: flex;
     width: 70%;
 }
+
 .about__second-column {
     width: 30%;
     text-align: center;
-      @media screen and (max-width: 768px) {
-    width: 60%;
+    @media screen and (max-width: 768px) {
+        width: 60%;
     }
     img {
         width: 60%;
@@ -85,24 +89,26 @@
         padding-top: 5%;
     }
 }
+
 .about__offer-title {
-    color: #969696;
+    color: $grey;
     font-size: 0.9em;
     font-weight: 100;
-    font-family: "avenir";
+    font-family: $primary-font;
     @media screen and (max-width: 768px) {
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
 }
+
 .about__offer-p {
     max-width: 18em;
     margin-bottom: 4em;
-    color: #585858;
+    color: $grey-4;
     font-size: 0.8em;
     font-weight: 100;
-    font-family: "avenir";
+    font-family: $primary-font;
     @media screen and (max-width: 768px) {
         justify-content: center;
         max-width: 100%;
@@ -112,6 +118,7 @@
         margin-bottom: 2em;
     }
 }
+
 .about__row {
     display: flex;
     justify-content: space-between;
@@ -121,6 +128,7 @@
         justify-content: center;
     }
 }
+
 .offer {
     flex-shrink: 0;
     width: 50%;
@@ -129,35 +137,36 @@
     }
 }
 
+
 /*DEVICES */
 
 .about__devices {
     display: flex;
     justify-content: space-between;
-     background-color: #191919;
+    background-color: $blackMate;
     @media screen and (max-width: 768px) {
         flex-direction: column-reverse;
         justify-content: center;
         text-align: center;
-
     }
 }
+
 .about__devices-desc {
     margin: 0 auto;
     padding-top: 9%;
     p {
-    color: #969696;
-    font-size: 0.9em;
-    font-weight: 100;
-    text-align: center;
-    font-family: "avenir";
+        color: $grey;
+        font-size: 0.9em;
+        font-weight: 100;
+        text-align: center;
+        font-family: $primary-font;
     }
     @media screen and (max-width: 768px) {
         padding-top: 2%;
         padding-bottom: 2%;
     }
-   
 }
+
 .devices__picto {
     display: flex;
     justify-content: space-around;
@@ -165,6 +174,7 @@
         margin-right: 10%;
     }
 }
+
 .about__devices-img {
     width: 50%;
     @media screen and (max-width: 768px) {
@@ -172,33 +182,39 @@
     }
 }
 
+
 /*CLIENTS*/
 
 .about__clients {
-    background-color: #FFF;
+    background-color: $white-1;
     padding: 1% 0;
     margin-top: -12%;
     z-index: 3;
     position: relative;
+    padding-bottom: 7%;
+    .about__title{
+    color : $black;
+    }
     @media screen and (max-width: 955px) {
-    margin-top: -8%;
+        margin-top: -8%;
     }
     @media screen and (max-width: 768px) {
-    margin-top: 0;
+        margin-top: 0;
     }
 }
+
 .logos__container {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
 }
+
 .clients__logo {
     width: 10%;
     height: 100%;
-     @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         width: 30%;
         height: 100%;
-
     }
 }

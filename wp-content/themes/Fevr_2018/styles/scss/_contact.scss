@@ -1,5 +1,5 @@
 .contact__main {
-    background-color: #191919;
+    background-color: $blackMate;
 }
 
 .contact__container {
@@ -18,8 +18,8 @@
 
 .form__container {
     width: 70%;
-    padding:0 10px 0 20px;
-    overflow: scroll;
+    padding: 0 10px 0 20px;
+    /*overflow: scroll;*/
 }
 
 #map {
@@ -35,22 +35,25 @@
 }
 
 .adress {
-
     font-size: 0.8em;
     width: 100%;
     line-height: 21px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 10px;
+    margin-top: 20px;
     padding-right: 10px;
-    color: #444444;
+    color: $grey;
     .fr {
         text-align: right;
         padding-right: 35px;
+        z-index: 22222;
+        cursor: pointer;
     }
     .us {
         padding-left: 15px;
         text-align: left;
+        z-index: 22222;
+        cursor: pointer;
     }
 }
 
@@ -58,41 +61,43 @@ input,
 input:focus {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid rgba(88, 88, 88, 0.37);
+    border-bottom: 1px solid $grey-1;
     max-width: 100%;
-    font-family: 'Avenir-book';
-    color: rgba(189, 189, 188, 0.7);
+    font-family: $primary-font;
+    color: $grey;
 }
 
 textarea {
-    font-family: 'Avenir-book';
-    color: rgba(189, 189, 188, 0.7);
+    font-family: $primary-font;
+    color: $grey-3;
 }
+
 input[type="text"],
-input[type="email"]
-{
-  width: 99%;
-  padding: 0;
-  font-size: 1em;
+input[type="email"] {
+    color: $grey-3;
+    width: 99%;
+    padding: 0;
+    font-size: 1em;
 }
 
 ::placeholder {
-    font-family: 'Avenir-Book';
+    font-family: $primary-font;
     font-weight: 100;
-    color: rgba(150, 150, 150, 0.7);
+    color: $grey-3;
     padding: 0 !important;
     font-size: 1em;
 }
-.labelModif{
-  position: relative;
-    bottom: 29px;
+
+label {
+    color: $grey;
 }
+
 textarea,
 textarea:focus {
     min-width: 100%;
     margin-top: 10px;
     background: transparent;
-    border: 1px solid rgba(88, 88, 88, 0.37);
+    border: 1px solid $grey-1;
     max-width: 100%;
     max-height: 150px;
     min-height: 150px;
@@ -108,16 +113,16 @@ textarea:focus {
 }
 
 input[type="button"] {
-    color: #fff;
+    color: $white;
     background-color: #8d88be;
-    border-color: rgba(88, 88, 88, 0.37);
+    border-color: $grey-1;
     padding: 6px;
 }
+
 input[type="file"] {
     color: #333;
     border: 0;
-    border-bottom: 1px solid #333;
-   
+    border-bottom: 1px solid $grey-1;
 }
 
 span.wpcf7-not-valid-tip {
@@ -132,14 +137,14 @@ span.wpcf7-not-valid-tip {
 
 input.wpcf7-form-control.wpcf7-submit {
     background: transparent;
-    border: 1px solid rgba(88, 88, 88, 0.37);
+    border: 1px solid $grey-1;
     transition: all 2s;
-    color: #969696;
+    color: $grey;
     font-weight: normal;
     font-family: inherit;
     min-width: 210px;
     margin: 10px;
-    font-family: 'avenir';
+    font-family: $primary-font;
     font-weight: 100;
     text-transform: inherit;
 }
@@ -147,13 +152,13 @@ input.wpcf7-form-control.wpcf7-submit {
 button#tab_contact,
 button#tab_job {
     background: transparent;
-    color: rgba(150, 150, 150, 0.7);
+    color: $grey;
     font-weight: normal;
     font-family: inherit;
     min-width: 210px;
     margin: 10px;
     font-size: 1em;
-    font-family: 'Avenir-Book';
+    font-family: $primary-font;
     font-weight: 100;
     text-transform: inherit;
     transition: all 0.5s;
@@ -172,33 +177,33 @@ button#tab_contact:active,
 button#tab_job:active,
 button#tab_contact:focus,
 button#tab_job:focus {
-    border-bottom: 10px solid #363636;
+    border-bottom: 10px solid $grey-3;
     line-height: 0px;
     transition: all 0.5s;
     transition-timing-function: ease-in-out;
 }
+
 button#tab_contact:avisited,
 button#tab_job:avisited,
 button#tab_contact:visited,
 button#tab_job:visited {
-    border-bottom:0;
+    border-bottom: 0;
     line-height: 0px;
     transition: all 0.5s;
     transition-timing-function: ease-in-out;
 }
-.select_form{
-      display: flex;
-      justify-content: space-evenly;}
+
+.select_form {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 #custom-file-input::-webkit-file-upload-button {
     visibility: hidden;
 }
 
-/*input[type="file"]{
-color: transparent;
-}*/
 #custom-file-input::before {
-    
+
     display: inline-block;
     padding: 5px 8px;
     outline: none;
@@ -207,14 +212,12 @@ color: transparent;
     cursor: pointer;
     font-size: 10pt;
     background: transparent;
-    border: 1px solid rgba(88, 88, 88, 0.37);
+    border: 1px solid $grey;
     transition: all 2s;
-    color: #333;
+    color: $grey-3;
     font-weight: normal;
-    font-family: inherit;
-
+    font-family: $primary-font;
     margin: 10px;
-    font-family: 'avenir';
     font-weight: 100;
 }
 
