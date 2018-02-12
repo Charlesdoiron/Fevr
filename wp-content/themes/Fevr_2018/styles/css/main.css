@@ -56,7 +56,7 @@ a:focus, a:active, a:hover {
     max-width: 100%; } }
 
 .site-main {
-  padding: 0; }
+  padding-bottom: 0; }
 
 body,
 p {
@@ -525,12 +525,12 @@ body.single {
   .adress .fr {
     text-align: right;
     padding-right: 35px;
-    z-index: 22222;
+    z-index: 2;
     cursor: pointer; }
   .adress .us {
     padding-left: 15px;
     text-align: left;
-    z-index: 22222;
+    z-index: 2;
     cursor: pointer; }
 
 input,
