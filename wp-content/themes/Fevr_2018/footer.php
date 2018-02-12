@@ -24,21 +24,29 @@ Template Name: Footer
 			</a>
 </div>
 	<div class="footer__adress">
-		<p><?php the_field('test') ?></p> 
-		<div class="french__adress">
-<?php the_field('adress_fr') ?>
+
+		<div class="fr__adress">
+		<p>4 rue de Jarente<br>
+		75004 Paris<br>
+		paris@fevr.tv<br>
+		+33(0)1 85 08 51 51</p> 
 		</div>
 		<div class="us__adress">
-			<p><?php the_field('adress_us') ?></p>
+			<p>350 Lincoln Road <br>
+			Miami Beach FL 33139 <br>
+			miami@fevr.tv<br>
++1 305-930-8807</p>
 		</div>
 	</div>
 
 	<div class="footer__socials">
-		<i class="fa fa-facebook" aria-hidden="true"></i>
-		<i class="fa fa-instagram" aria-hidden="true"></i>
-		<i class="fa fa-vimeo" aria-hidden="true"></i>
-				<p><?php the_field('copyright') ?></p>
-		<p><?php the_field('credits') ?></p>
+		<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+		<i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+		<i class="fa fa-vimeo fa-lg" aria-hidden="true"></i>
+		<div class="footer__credits">
+			<p>© Fevr 2018</p>
+			<p>Crédits</p>
+		</div>
 	</div>
 
 	</div>
