@@ -28,19 +28,18 @@
 	<div id="sidebar" class="sidebar">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
-				<?php
-					twentyfifteen_the_custom_logo();
-
-					if ( is_front_page() && is_home() ) : ?>
-					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif;
-
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						
-					<?php endif;
-				?>
+				<div class="fevr__logo">	
+			<svg width="232px" height="72px" viewBox="0 0 232 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    	<g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="700" font-family="SpecifyPERSONALExpanded-Black, Specify PERSONAL Expanded" font-style="expanded" font-size="84">
+      <g id="Artboard" transform="translate(-54.000000, -283.000000)" fill="#000">
+        <text id="fevr">
+          <tspan x="54" y="353">fevr</tspan>
+        </text>
+        </g>
+    </g>
+</svg>
+				</div>
+			
 				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
 				<?php get_sidebar(); ?>
 			</div><!-- .site-branding -->

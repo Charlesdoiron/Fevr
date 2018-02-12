@@ -1,42 +1,49 @@
-
-// STIKY HEADER
-
-window.addEventListener('scroll', function() {
 const header = document.querySelector('.site-branding')
 const headerHeight = header.offsetHeight
 const menuItems = [...document.querySelectorAll('.main-navigation li a')]
-const menuBorder = [...document.querySelectorAll('.main-navigation .current-menu-item > a')]
-const logo = document.querySelector('.custom-logo-link img')
+const logo = document.querySelector('.fevr__logo svg')
+const logoSvg = document.querySelector('.fevr__logo svg g g')
 const siteMain = document.querySelector('.site-main')
+const body = document.querySelector('body')
+const logoBlack = "logoSvg.style.fill = '#000';"
+const logoWhite = " logoSvg.style.fill = '#FFF';"
 
-    if (!header.classList.contains('active') && (window.pageYOffset > headerHeight)) {
+// AUTOMATIC LOGO COLOR
+const makeLogoGreatAgain = function() {
+    if (!body.classList.contains('page-template-template-about')) {
+        if (body.offsetWidth >= 954) {
+           return logoSvg.style.fill = "#FFF";
+        } else if (body.offsetWidth <= 954) {
+            console.log('petit et noir')
+           return logoSvg.style.fill = "#000";
+        }
+    }
+}
+
+// STICKY HEADER
+const makeHeaderFixeAgain = function () {
+    if ((!header.classList.contains('active')) && (window.pageYOffset > headerHeight)) {
         header.classList.add('active')
         menuItems.map(item => item.classList.add('active'))
-        menuBorder.map(item => item.classList.add('active'))
-        // Baisse le contenu du site
-        siteMain.style.paddingTop = headerHeight + "px";
-        console.log('dd')
-        logo.src = "http://localhost:8888/wp-content/uploads/2017/09/logo.png"
-    } else if (window.pageYOffset <= headerHeight && (header.classList.contains('active'))) {
+       return logoSvg.style.fill = "#000";
+    } else if (window.pageYOffset <= headerHeight && (header.classList.contains('active')) && body.offsetWidth >= 954) {
         menuItems.map(item => item.classList.remove('active'))
-        menuBorder.map(item => item.classList.remove('active'))
         header.classList.remove('active')
-        logo.src = "http://localhost:8888/wp-content/uploads/2018/01/cropped-logoWhite.png"
-
+        return logoSvg.style.fill = "#FFF";
     }
-})
+}
 
-//MENU
+window.addEventListener('load', makeLogoGreatAgain)
+window.addEventListener('resize', makeLogoGreatAgain)
+window.addEventListener('scroll',makeHeaderFixeAgain )
 
+
+//MENU BURGER
 const burger = document.querySelector('.secondary-toggle')
 const menuBkg = document.querySelector('.site-branding')
 
-
-burger.addEventListener('click', function () {
+burger.addEventListener('click', function() {
     menuBkg.classList.toggle('fullHeight')
-            logo.src = "http://localhost:8888/wp-content/uploads/2017/09/logo.png"
+    logoSvg.style.fill = "#000";
 
 })
-    
-
-

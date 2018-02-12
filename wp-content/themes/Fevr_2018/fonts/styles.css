@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'specify_personal_expandedBlk';
-    src: url('fevrtypo-webfont.eot');
-    src: url('fevrtypo-webfont.eot') format('embedded-opentype'),
-         url('fevrtypo-webfont.woff2') format('woff2'),
-         url('fevrtypo-webfont.woff') format('woff'),
-         url('fevrtypo-webfont.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    src: url('specifypersonal-expblack-webfont.eot');
+    src: url('specifypersonal-expblack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('specifypersonal-expblack-webfont.woff2') format('woff2'),
+         url('specifypersonal-expblack-webfont.woff') format('woff'),
+         url('specifypersonal-expblack-webfont.ttf') format('truetype'),
+         url('specifypersonal-expblack-webfont.svg#specify_personal_expandedBlk') format('svg');
+    font-weight: black;
+    font-style: black;
 
 }
-
 @font-face {
   font-family: 'Avenir-Book';
   src: url('Avenir-Book.eot') format('embedded-opentype');

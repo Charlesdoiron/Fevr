@@ -56,7 +56,7 @@
    footer.appendChild(script);
  }
 	
-	else if(document.querySelector('body').classList.contains('single')){
+	else if(document.querySelector('body').classList.contains('post-template-default')){
    const script= document.createElement('script');
    script.type= 'text/javascript';
    script.src= "<?php echo get_stylesheet_directory_uri(); ?>/js/animationInsideProject.js";

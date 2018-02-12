@@ -27,8 +27,8 @@ get_header(); ?>
 			 
 			// Previous/next post navigation.
 			the_post_navigation( array(
-				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' ,
-				'prev_text' => '<span class="" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> '
+				'next_text' => '<span class="meta-nav">' . __( 'Suivant >') . '</span> ' ,
+				'prev_text' => '<span class="meta-nav">' . __( '<p class="nav__ponct">'.'<'.'</p>'.'<p class="nav__word">'.'Précédent'.'<p>') . '</span> '
 			) ); 
 
 		// End the loop.

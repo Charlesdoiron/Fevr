@@ -19,7 +19,7 @@
 }
 
 .entry-content p {
-    color: #7A7676;
+    color: $white;
     font-size: 0.8em;
     font-family: $primary-font;
     font-weight: 100;
@@ -57,7 +57,7 @@ body.single {
     margin-top: 10%;
     margin-bottom: 2%;
     letter-spacing: 1px;
-    color: #585858;
+    color: $white;
     text-transform: lowercase;
     &::first-letter {
         text-transform: uppercase;
@@ -124,31 +124,60 @@ body.single {
 
 .nav-links {
     display: flex;
+    justify-content: space-between;
     width: 100%;
+    background-color: $black;
 }
 
-.post__nav-prev,
-.post__nav-next {
-    width: 20%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.post__nav-prev {}
-
-.post__nav-next {
-    transform: rotate(180deg);
-}
 
 .post-navigation .nav-next {
     background-image: none !important;
+    a{
+      text-transform: lowercase;
+    }
 }
 
+.nav__ponct{
+  display: inline-block;
+    margin-right: 4px;
+}
+.nav__word{
+display: inline-block;
+ &::first-letter {
+        text-transform: uppercase;
+    }
+}
 .post-navigation .nav-previous span,
 .post-navigation .nav-next span {
-    color: rgba(47, 47, 47, 1)!important;
+  padding:0;
+    color: $white !important;
     z-index: 9;
     position: relative;
+    font-weight: 100;
+    font-size: 0.7em;
+    font-family: $primary-font;
+    text-transform: lowercase;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+    &:first-letter {
+        text-transform: uppercase;
+    }
+}
+.post-navigation .nav-previous span,{
+      &::second-letter {
+        text-transform: uppercase;
+    }
+    &:second-letter {
+        text-transform: uppercase;
+    }
+}
+.post-navigation a,
+.post-navigation a:before{
+  width: auto;
+  padding: 0;
+  display: inline-block;
+
 }
 
 .post-navigation .nav-previous a:before,
@@ -165,4 +194,5 @@ body.single {
 .post-navigation .nav-previous:hover,
 .post-navigation .nav-next:hover {
     background-image: none !important;
+        background-color: $black !important;
 }
