@@ -8,8 +8,24 @@
 .fevr__logo svg {
     width: 10%;
     height: auto;
-    @media screen and (max-width: 954px) {
-        width: 20%;
+    transition: all 2s;
+    g{
+        g{
+            fill: #FFF;
+        }
+    }
+    @media #{$tablet} {
+        width: 10%;
+    }
+    @media #{$mobile} {
+        width: 15%;
+    }
+}
+
+.site-branding.fullHeight {
+    .fevr__logo {
+        text-align: center;
+        transition: all 2s;
     }
 }
 
@@ -20,7 +36,7 @@
 }
 
 .main-navigation ul {
-    @media screen and (max-width: 954px) {
+    @media #{$tablet} {
         line-height: 30vh;
     }
 }
@@ -35,9 +51,11 @@
     margin-left: 2em;
     margin-right: 1em;
     border-top: 0;
-    @media screen and (max-width: 954px) {
+    transition: all 1s;
+    @media #{$tablet} {
         display: inline;
         margin: 0;
+        transition: all 1s;
     }
 }
 
@@ -45,14 +63,14 @@
     color: $white;
     font-family: $primary-font;
     text-transform: uppercase;
-    @media screen and (max-width: 954px) {
+    @media #{$tablet} {
         color: $black;
         z-index: 200;
     }
 }
 
 .secondary {
-    @media screen and (max-width: 954px) {
+    @media #{$tablet} {
         display: none;
         margin: 0 !important;
         padding: 0 !important;
@@ -60,12 +78,6 @@
     }
 }
 
-
-
-/*.secondary-toggle.toggled-on:before {
-    left: -10px;
-}
-*/
 
 .main-navigation li a.active {
     color: $black;
@@ -79,10 +91,10 @@
     height: 40px;
     transition: all 0.5s;
     font-weight: 100;
-    @media screen and (max-width: 954px) {
-        width:70px;
+    @media #{$tablet} {
+        width: 70px;
         margin: 0 auto;
-        font-weight: bold;
+        font-weight: bold !important;
     }
 }
 
@@ -91,7 +103,7 @@
     min-height: 0 !important;
     transition: all 0.3s;
     line-height: 100%;
-    @media screen and (max-width: 954px) {
+    @media #{$tablet} {
         background-color: $white;
         min-height: 0px !important;
         position: fixed;
@@ -114,14 +126,12 @@
         height: 40px;
         transition: all 0.5s;
         transition-timing-function: ease-in-out;
+        @media #{$tablet} {
+            border-bottom: 0;
+            box-shadow: none;
+        }
     }
 }
-
-
-
-
-
-
 
 .site-header {
     margin: 0;
@@ -133,7 +143,7 @@
     position: relative;
     bottom: 30px;
     margin-bottom: -30px;
-    @media screen and (max-width: 954px) {
+    @media #{$tablet} {
         float: none;
     }
 }
@@ -146,10 +156,11 @@
     border: 0;
     top: 25px;
     z-index: 40;
+    transition: all 2s;
 }
 
 img.custom-logo {
-    @media screen and (max-width: 954px) {
+    @media #{$tablet} {
         width: 15% !important;
         margin: 0 auto;
     }

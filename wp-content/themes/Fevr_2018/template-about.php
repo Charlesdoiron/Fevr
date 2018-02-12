@@ -102,4 +102,5 @@ get_header(); ?>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 
-<?php get_footer(); ?>
+        <?php get_footer(); ?>
+

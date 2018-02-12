@@ -3,11 +3,8 @@
     justify-content: space-between;
     padding: 10px;
     border-top: 1px solid rgba(25, 25, 25, 0.04);
-    .fa {
-        margin-right: 10%;
-    }
     p {
-        font-size: 0.5em;
+       font-size: 0.8em;
         margin-bottom: 0;
     }
 }
@@ -17,10 +14,8 @@
 }
 
 .footer__logo {
-    text-align: center;
-    width: 33%;
-    img {
-        width: 20%;
+    svg{
+         width: 40%;
     }
 }
 
@@ -34,5 +29,5 @@
 
 .french__adress,
 .us__adress {
-    max-width: 90px;
+    font-size: 1em;
 }

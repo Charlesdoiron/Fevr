@@ -13,12 +13,16 @@ const makeLogoGreatAgain = function() {
     if (!body.classList.contains('page-template-template-about')) {
         if (body.offsetWidth >= 954) {
            return logoSvg.style.fill = "#FFF";
-        } else if (body.offsetWidth <= 954) {
-            console.log('petit et noir')
+        } 
+        else if (body.offsetWidth <= 954) {
            return logoSvg.style.fill = "#000";
         }
     }
+    else {
+           return logoSvg.style.fill = "#000";
+        }
 }
+   
 
 // STICKY HEADER
 const makeHeaderFixeAgain = function () {
@@ -26,10 +30,17 @@ const makeHeaderFixeAgain = function () {
         header.classList.add('active')
         menuItems.map(item => item.classList.add('active'))
        return logoSvg.style.fill = "#000";
+
     } else if (window.pageYOffset <= headerHeight && (header.classList.contains('active')) && body.offsetWidth >= 954) {
-        menuItems.map(item => item.classList.remove('active'))
-        header.classList.remove('active')
-        return logoSvg.style.fill = "#FFF";
+        menuItems.map(item => item.classList.remove('active'));
+        header.classList.remove('active');
+        if (!body.classList.contains('page-template-template-about')) {
+          return logoSvg.style.fill = "#FFF";  
+        }
+        else{
+            return logoSvg.style.fill = "#000";  
+        }
+        
     }
 }
 

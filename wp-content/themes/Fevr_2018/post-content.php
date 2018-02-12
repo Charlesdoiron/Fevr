@@ -16,7 +16,7 @@
 		twentyfifteen_post_thumbnail();
 	?>
 <div class="page__close">
-	<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+	<a href="<?php echo home_url(); ?>">
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/pictos/close.svg" alt="">
 	</a>
 	

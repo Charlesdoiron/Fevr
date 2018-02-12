@@ -29,15 +29,16 @@
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
 				<div class="fevr__logo">	
-			<svg width="232px" height="72px" viewBox="0 0 232 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    	<g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="700" font-family="SpecifyPERSONALExpanded-Black, Specify PERSONAL Expanded" font-style="expanded" font-size="84">
-      <g id="Artboard" transform="translate(-54.000000, -283.000000)" fill="#000">
-        <text id="fevr">
-          <tspan x="54" y="353">fevr</tspan>
-        </text>
-        </g>
-    </g>
-</svg>
+			<a href="<?php echo home_url(); ?>"><svg width="232px" height="72px" viewBox="0 0 232 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    	<g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="700" font-family="SpecifyPERSONALExpanded-Black, Specify PERSONAL Expanded" font-style="expanded" font-size="84">
+				      <g id="Artboard" transform="translate(-54.000000, -283.000000)" fill="#000">
+				        <text id="fevr">
+				          <tspan x="54" y="353">fevr</tspan>
+				        </text>
+				        </g>
+				    </g>
+				</svg>
+			</a>
 				</div>
 			
 				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>

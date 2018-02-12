@@ -1,43 +1,44 @@
-
 @import 'variables';
 
+
+
 /*GENERAL*/
-a:focus, a:active, a:hover {
+
+a:focus,
+a:active,
+a:hover {
     outline: 0 !important;
     outline: 0 !important;
 }
 
-@media screen and (min-width: 59.6875em){
+
 .site {
     margin: 0 auto;
     max-width: 100%;
 }
-}
 
-.site-main{
+.site-main {
     padding-bottom: 0;
 }
+
 body,
 p {
     font-family: $primary-font;
-
 }
-body{
+
+body {
     background-color: $white;
 }
 
-@media screen and (min-width: 59.6875em) {
-    body:before {
-        display: none;
-    }
+body:before {
+    display: none;
 }
 
-@media screen and (min-width: 59.6875em) {
-    .site-content {
-        width: 100%;
-        margin-left: 0;
-    }
+.site-content {
+    width: 100%;
+    margin-left: 0;
 }
+
 
 .hide {
     display: none;
@@ -46,12 +47,16 @@ body{
 .show {
     display: block;
 }
-.fullHeight{
+
+.fullHeight {
     height: 100vh;
+    transition: all 2s;
 }
-.text-center{
-	text-align: center;
+
+.text-center {
+    text-align: center;
 }
-.text-right{
-	text-align: right;
+
+.text-right {
+    text-align: right;
 }
