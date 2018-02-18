@@ -7,9 +7,9 @@ mask.style.width = widthSlider + 'px'
 mask.style.height = heightSlider + 'px'
 
 function maskAnimation() {
-	mask.style.width = "0px";
+	setTimeout(function(){ mask.style.width = "0px";},1000); 
 }
-mask.addEventListener('mouseover', maskAnimation)
+window.addEventListener('load', maskAnimation)
 
 
 

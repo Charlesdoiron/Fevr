@@ -5,8 +5,11 @@
 }
 
 
+.fevr__logo {
+        display: inline-block;
+}
 .fevr__logo svg {
-    width: 10%;
+    width: 50%;
     height: auto;
     transition: all 2s;
     g{
@@ -15,10 +18,10 @@
         }
     }
     @media #{$tablet} {
-        width: 10%;
+        width: 30%;
     }
     @media #{$mobile} {
-        width: 15%;
+        width: 30%;
     }
 }
 
@@ -26,8 +29,22 @@
     .fevr__logo {
         text-align: center;
         transition: all 2s;
-    }
+        @media #{$tablet} {
+        width: 100%;
+   } 
 }
+}
+
+   .site-branding.fullHeight .fevr__logo svg{
+        @media #{$tablet} {
+        width: 20% !important;
+    }
+    @media #{$mobile} {
+        width: 20% !important;
+    }
+    }
+    
+
 
 #site-navigation {
     width: 100%;
@@ -116,6 +133,11 @@
     position: fixed;
     width: 100%;
     transition: all 0.3s;
+    z-index: 41;
+    padding-bottom: 0;
+    @media #{$tablet} {
+        padding-bottom: 1.1em;
+    }
     .main-navigation .current-menu-item>a,
     .main-navigation .current-menu-item>a.active,
     .main-navigation .current-menu-ancestor>a {
@@ -141,8 +163,8 @@
 .menu-main-menu-container {
     float: right;
     position: relative;
-    bottom: 30px;
-    margin-bottom: -30px;
+    bottom: 40px;
+   /* margin-bottom: -30px;*/
     @media #{$tablet} {
         float: none;
     }

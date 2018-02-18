@@ -30,6 +30,7 @@ a.post-thumbnail:focus {
     left: 0;
     right: 0;
     text-align: center;
+    overflow: hidden;
 }
 
   @media #{$mobile} {
@@ -49,6 +50,7 @@ a.post-thumbnail:focus {
     color: $white;
     text-transform: uppercase;
     text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
+
 }
 
 .mask-title {

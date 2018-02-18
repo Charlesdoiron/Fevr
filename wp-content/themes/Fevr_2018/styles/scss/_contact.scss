@@ -9,6 +9,7 @@
     height: 100vh;
     @media #{$tablet} {
         flex-direction: column;
+        height: auto;
     }
 }
 
@@ -18,9 +19,10 @@
     transition: all 1s;
     transition-timing-function: ease-in-out;
     @media #{$tablet} {
-        margin-top: -45px;
+        margin-top: -35px;
         width: 100%;
         transform: translateX(0px);
+        height: 30%;
     }
 }
 
@@ -36,6 +38,9 @@
 #map {
     height: 100vh;
     width: 100%;
+    @media #{$tablet} {
+        height: 50vh;
+    }
 }
 
 .mapChangeWith {
@@ -51,9 +56,10 @@
     line-height: 21px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px;
+    margin-top: 50px;
     padding-right: 10px;
     color: $grey;
+    z-index: 40;
     @media #{$tablet} {
         justify-content: space-evenly;
         margin-top: 5em;
@@ -64,6 +70,7 @@
         padding-right: 35px;
         z-index: 2;
         cursor: pointer;
+        font-size: 0.8em;
         @media #{$tablet} {
             padding-right: 2px;
             text-align: center;
@@ -76,6 +83,7 @@
         text-align: left;
         z-index: 2;
         cursor: pointer;
+        font-size: 0.8em;
         @media #{$tablet} {
             padding-left: 2px;
             text-align: center;
@@ -117,6 +125,40 @@ input[type="email"] {
 
 label {
     color: $grey;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+    width: 45%;
+    @media #{$tablet} {
+         width: 100%;
+        line-height: 2em;
+    }
+}
+
+.label-modify {
+    position: relative;
+    bottom: 50px;
+    @media #{$tablet} {
+        bottom: 20px;
+    }
+}
+
+.submit_job {
+    bottom: 26px;
+    position: relative;
+}
+
+.label-modify2 {
+    position: relative;
+    bottom: 26px;
+    @media #{$tablet} {
+        bottom: 20px;
+    }
+}
+
+.label-cv {
+    position: relative;
+    bottom: 7px;
 }
 
 textarea,
@@ -133,7 +175,12 @@ textarea:focus {
 .two-col-form {
     display: flex;
     justify-content: space-between;
+     @media #{$tablet} {
+        flex-direction: column;
+     }
 }
+
+
 
 .wpcf7-form-control-wrap {
     margin-right: 5px;
@@ -150,6 +197,9 @@ input[type="file"] {
     color: #333;
     border: 0;
     border-bottom: 1px solid $grey-1;
+     @media #{$tablet} {
+        width: 100%;
+     }
 }
 
 span.wpcf7-not-valid-tip {
@@ -170,7 +220,6 @@ input.wpcf7-form-control.wpcf7-submit {
     font-weight: normal;
     font-family: inherit;
     min-width: 210px;
-    margin: 10px;
     font-family: $primary-font;
     font-weight: 100;
     text-transform: inherit;
@@ -203,7 +252,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
     transition: all 2s;
 }
 
-button#tab_contact:active,
+/*button#tab_contact:active,
 button#tab_job:active,
 button#tab_contact:focus,
 button#tab_job:focus {
@@ -213,7 +262,18 @@ button#tab_job:focus {
     height: 40px;
     transition: all 0.5s;
     transition-timing-function: ease-in-out;
+}*/
+
+#tab_contact.active,
+#tab_job.active {
+    border-bottom: 10px solid $grey-3;
+    box-shadow: inset 0 -5px 0 $grey-3;
+    display: inline-block;
+    height: 40px;
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
 }
+
 
 button#tab_contact:avisited,
 button#tab_job:avisited,

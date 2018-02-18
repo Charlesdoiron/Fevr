@@ -80,6 +80,9 @@
 .about__first-column {
     display: flex;
     width: 70%;
+     @media #{$mobile} {
+        width: 100%;
+    }
 }
 
 .about__second-column {
@@ -121,6 +124,7 @@
         margin: 0 auto;
         margin-top: 1em;
         margin-bottom: 2em;
+        text-align: center;
     }
 }
 
@@ -153,7 +157,7 @@
     @media #{$mobile} {
         flex-direction: column-reverse;
         justify-content: center;
-        text-align: center;
+        text-align: center;;
     }
 }
 
@@ -176,6 +180,9 @@
 .devices__picto {
     display: flex;
     justify-content: space-around;
+    @media #{$mobile} {
+        margin-bottom: 2em;
+    }
     img {
         margin-right: 10%;
     }
@@ -185,6 +192,7 @@
     width: 50%;
     @media #{$mobile} {
         margin: 0 auto;
+        margin-bottom: 2em;
     }
 }
 

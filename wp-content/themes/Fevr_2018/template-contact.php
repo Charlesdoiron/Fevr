@@ -27,11 +27,12 @@ get_header(); ?>
                         <div class="adress">
                           <div class="fr">
                             <?php the_field('adress_fr') ?>
+                           
                             </div>
                           <div class="us"><?php the_field('adress_us') ?></div>
                         </div>
                         <div class="select_form">
-                          <button id="tab_contact">Contact</button>
+                          <button id="tab_contact" class="active">Contact</button>
                           <button id="tab_job">Job</button>
                         </div>
                         <div id="contact_form" class="show">
@@ -57,4 +58,4 @@ get_header(); ?>
             <!-- .site-main -->
         </div>
         <!-- .content-area -->
-        <?php get_footer(); ?>
+<?php get_footer(); ?>

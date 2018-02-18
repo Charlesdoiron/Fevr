@@ -5,17 +5,27 @@
 .two-col {
     display: flex;
     justify-content: center;
+        padding: 0 3em;
     @media #{$tablet} {
         flex-direction: column;
     }
 }
+.one-col{
+        padding: 0 3em;
+}
 .one-col .img-container,
 .two-col .img-container {
     padding: 3px;
+    width: 100%;
+    text-align: center;
+        margin: 0 auto;
+     img{
+        width: 100%;
+    }
 }
+
 .one-col .img-container {
-    width: 50%;
-    margin: 0 auto;
+
     @media #{$tablet} {
         width: 100%;
     }

@@ -1,5 +1,5 @@
-const header = document.querySelector('.site-branding')
-const headerHeight = header.offsetHeight
+let header = document.querySelector('.site-branding')
+let headerHeight = header.offsetHeight
 const menuItems = [...document.querySelectorAll('.main-navigation li a')]
 const logo = document.querySelector('.fevr__logo svg')
 const logoSvg = document.querySelector('.fevr__logo svg g g')
